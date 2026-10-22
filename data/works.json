@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Project 01",
+    "slug": "project-01",
+    "category": "brand",
+    "type": "Brand Identity",
+    "client": "Client name",
+    "date": "2026-09-01",
+    "cover": "",
+    "summary": "한 줄 요약: 이 프로젝트에서 던진 질문과 도착한 답.",
+    "body": "<p>프로젝트 배경과 과정을 여기에 씁니다. 관리자 화면에서 서식 있는 텍스트로 편집할 수 있습니다.</p>",
+    "gallery": [],
+    "published": true
+  },
+  {
+    "title": "Project 02",
+    "slug": "project-02",
+    "category": "graphic",
+    "type": "Package",
+    "client": "Client name",
+    "date": "2026-07-15",
+    "cover": "",
+    "summary": "",
+    "body": "",
+    "gallery": [],
+    "published": true
+  },
+  {
+    "title": "Project 03",
+    "slug": "project-03",
+    "category": "digital",
+    "type": "Website",
+    "client": "Client name",
+    "date": "2026-05-20",
+    "cover": "",
+    "summary": "",
+    "body": "",
+    "gallery": [],
+    "published": true
+  },
+  {
+    "title": "Project 04",
+    "slug": "project-04",
+    "category": "space",
+    "type": "Spatial Branding",
+    "client": "Client name",
+    "date": "2026-03-10",
+    "cover": "",
+    "summary": "",
+    "body": "",
+    "gallery": [],
+    "published": true
+  },
+  {
+    "title": "Project 05",
+    "slug": "project-05",
+    "category": "brand",
+    "type": "Naming · BI",
+    "client": "Client name",
+    "date": "2025-12-01",
+    "cover": "",
+    "summary": "",
+    "body": "",
+    "gallery": [],
+    "published": true
+  },
+  {
+    "title": "Project 06",
+    "slug": "project-06",
+    "category": "graphic",
+    "type": "Editorial",
+    "client": "Client name",
+    "date": "2025-10-01",
+    "cover": "",
+    "summary": "",
+    "body": "",
+    "gallery": [],
+    "published": true
+  }
+]

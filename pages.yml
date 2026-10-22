@@ -1,0 +1,38 @@
+# Pages CMS 관리자 설정 — app.pagescms.org 에서 이 저장소를 열면 아래 화면이 생긴다.
+media:
+  input: images/works
+  output: images/works
+  rename: safe
+  categories: [image]
+
+content:
+  - name: works
+    label: 포트폴리오
+    type: file
+    path: data/works.json
+    format: json
+    list: true
+    fields:
+      - { name: title, label: 프로젝트명, type: string, required: true }
+      - { name: slug, label: "주소용 영문 ID (예: brand-x)", type: string, required: true }
+      - name: category
+        label: 카테고리
+        type: select
+        options:
+          values:
+            - { name: brand, label: Brand }
+            - { name: graphic, label: Graphic }
+            - { name: digital, label: Digital }
+            - { name: space, label: Space }
+      - { name: type, label: "작업 범위 (예: Brand Identity)", type: string }
+      - { name: client, label: 클라이언트, type: string }
+      - { name: date, label: 날짜, type: date }
+      - { name: cover, label: 대표 이미지, type: image }
+      - { name: summary, label: 한 줄 요약, type: text }
+      - { name: body, label: 본문, type: rich-text }
+      - name: gallery
+        label: 갤러리 이미지
+        type: image
+        options:
+          multiple: { max: 30 }
+      - { name: published, label: 공개, type: boolean, default: true }
