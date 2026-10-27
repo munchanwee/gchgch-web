@@ -238,7 +238,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .nav a{font-size:28px;font-weight:700;padding:12px 0;width:100%;border-bottom:1px solid #2a2a2a}
   .nav__cta{background:none;color:var(--orange)!important;padding:12px 0;border-radius:0}
   .burger{display:block}
-  .hero__top .mono:last-child{display:none}
+  .hero{min-height:0;padding-top:104px;padding-bottom:36px}
+  .hero__top{flex-direction:column;gap:2px}
+  .hero__logo{margin:56px 0 48px}
   .hero__bottom{grid-template-columns:1fr;gap:20px}
   .hero__sub{justify-self:start}
   .nots,.flow,.flow--4{grid-template-columns:1fr}
