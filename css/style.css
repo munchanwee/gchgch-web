@@ -247,6 +247,16 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .contact__row{grid-template-columns:1fr}
   .split{flex-wrap:wrap}
   .split__line{flex-basis:100%;order:3;display:none}
+  .prin__row{grid-template-columns:44px 1fr;padding:28px 0}
+  .step{min-height:0;padding:24px 0 28px}
+  .step--key{padding:24px 20px 28px}
+  .step__q{margin:20px 0 4px}
+  .step p{padding-top:12px}
+  .svc__row{grid-template-columns:1fr 40px;gap:6px 16px;padding:24px 0}
+  .svc__n,.svc__t{grid-column:1}
+  .svc__d{grid-column:1/-1}
+  .svc__arr{grid-row:1/3;grid-column:2;width:40px;height:40px}
+  .svc__row:hover{padding-left:0;padding-right:0}
 }
 
 /* ---------- Work detail ---------- */

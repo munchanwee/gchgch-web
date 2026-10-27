@@ -26,12 +26,26 @@
     var used=Object.keys(CATS).filter(function(k){return all.some(function(w){return w.category===k})});
     filters.innerHTML='<button class="is-on" data-f="all">All</button>'+used.map(function(k){return'<button data-f="'+k+'">'+CATS[k]+'</button>'}).join('');
 
+    // 줄마다 카드 2개(8+4, 4+8 번갈아) 또는 3개(4+4+4). 마지막 줄에 카드가 하나만 남지 않게 나눈다.
+    function wideFlags(n){
+      var rows=[],left=n,two=true;
+      while(left>0){var k=Math.min(two?2:3,left);rows.push(k);left-=k;two=!two}
+      if(rows.length>1&&rows[rows.length-1]===1){rows.pop();rows[rows.length-1]===3?(rows[rows.length-1]=2,rows.push(2)):(rows[rows.length-1]+=1)}
+      var flags=[],side=0;
+      rows.forEach(function(k){
+        for(var j=0;j<k;j++) flags.push(k===2?j===side:k===1);
+        if(k===2) side=1-side;
+      });
+      return flags;
+    }
+
     function draw(f){
       var list=all.filter(function(w){return f==='all'||w.category===f});
       var total=list.length;
       if(limit) list=list.slice(0,limit);
+      var wides=wideFlags(list.length);
       grid.innerHTML=list.length?list.map(function(w,i){
-        var wide=(i%5===0);
+        var wide=wides[i];
         return '<a href="work.html?id='+encodeURIComponent(w.slug)+'" class="card'+(wide?' card--w':'')+' is-in">'+
           '<div class="card__img">'+img(w.cover,w.title,i%3===0?'ph--o':'')+'<span class="card__hover">과정 보기 →</span></div>'+
           '<div class="card__meta"><h3 class="card__t">'+esc(w.title)+'</h3><span class="mono card__c">'+esc(w.type||CATS[w.category]||'')+'</span></div></a>';
