@@ -34,6 +34,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .hd.is-dark{background:var(--black);color:var(--paper)}
 .hd.is-dark .lg-o{display:none}.hd.is-dark .lg-w{display:block}
 .hd.is-solid{background:rgba(242,238,231,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hd.is-solid.is-dark{background:rgba(20,20,20,.94);border-bottom-color:#2a2a2a}
 .hd.is-hide{transform:translateY(-100%)}
 .nav{display:flex;gap:36px;align-items:center}
 .nav a{font-family:var(--font-en);font-weight:500;font-size:15px;position:relative}
