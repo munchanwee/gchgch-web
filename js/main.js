@@ -33,7 +33,7 @@ document.documentElement.classList.add('js');
 
   // active nav
   var links=[].slice.call(nav.querySelectorAll('a[href^="#"]'));
-  var secs=['about','approach','service','works','contact'].map(function(id){return document.getElementById(id)}).filter(Boolean);
+  var secs=['about','principles','approach','service','works','contact'].map(function(id){return document.getElementById(id)}).filter(Boolean);
   function activeNav(){
     var mid=window.innerHeight*0.5,cur=null;
     secs.forEach(function(s){var r=s.getBoundingClientRect();if(r.top<=mid&&r.bottom>mid)cur=s.id});

@@ -105,6 +105,16 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .not:hover li::before{color:var(--paper)}
 @media (min-width:1025px){.not:first-child{padding-left:28px}}
 
+/* ---------- Principles ---------- */
+.prin{list-style:none;border-top:1px solid #333}
+.prin__row{display:grid;grid-template-columns:200px 1.1fr 1fr;gap:40px;align-items:baseline;padding:36px 0;border-bottom:1px solid #333;transition:padding .3s}
+.prin__n{font-weight:700;font-size:18px;color:var(--orange)}
+.prin__t{font-size:clamp(26px,3vw,44px);font-weight:800;letter-spacing:-.035em;line-height:1.15;transition:color .3s}
+.prin__d{font-size:16px;color:#BDB8B1;text-wrap:pretty}
+.prin__row:hover{padding-left:16px}
+.prin__row:hover .prin__t{color:var(--orange)}
+.origin__big .strike{color:#A8A39D}
+
 /* ---------- Approach ---------- */
 .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:0;counter-reset:f;position:relative}
 .step{padding:28px 24px 32px;border-top:2px solid var(--black);position:relative;min-height:300px;display:flex;flex-direction:column}
@@ -116,6 +126,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .step--key{background:var(--orange);color:var(--paper);border-top-color:var(--orange)}
 .step--key .step__n,.step--key p{color:#FBE9E0}
 .step--key .step__en{color:var(--black)}
+.flow--4{grid-template-columns:repeat(4,1fr)}
 .flow__loop{display:flex;align-items:center;gap:14px;margin-top:28px;color:var(--ink-2)}
 .flow__loop svg{flex:none}
 
@@ -190,6 +201,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .ft{background:var(--black);color:#8E8983;padding:40px 0}
 .ft__in{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
 .ft img{height:22px;width:auto}
+.ft__info{margin-top:28px;padding-top:20px;border-top:1px solid #2a2a2a;font-size:12px;line-height:1.9;color:#77726C}
+.ft__info p{display:flex;flex-wrap:wrap;column-gap:20px}
+.ft__info a:hover{color:var(--orange)}
 
 /* ---------- Reveal ---------- */
 .js .rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
@@ -201,6 +215,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .sec__head,.origin__grid,.team{grid-template-columns:1fr}
   .origin__big,.origin__p,.origin__p+.origin__p,.split,.team__quote,.team__roles{grid-column:1}
   .origin__p{margin-top:24px}
+  .prin__row{grid-template-columns:72px 1fr;gap:12px 20px}
+  .prin__d{grid-column:2}
+  .flow--4{grid-template-columns:1fr 1fr}
   .nots{grid-template-columns:1fr 1fr}
   .not{border-bottom:1px solid #333;padding-left:24px!important}
   .not:nth-child(2n){border-right:0}
@@ -223,7 +240,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .hero__top .mono:last-child{display:none}
   .hero__bottom{grid-template-columns:1fr;gap:20px}
   .hero__sub{justify-self:start}
-  .nots,.flow{grid-template-columns:1fr}
+  .nots,.flow,.flow--4{grid-template-columns:1fr}
   .not{border-right:0}
   .step:nth-child(2n){border-left:0}
   .card,.card--w{grid-column:span 12}
