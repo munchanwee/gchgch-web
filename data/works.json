@@ -1,5 +1,35 @@
 [
   {
+    "title": "머시머시푸드 패키지",
+    "slug": "musimusi-food",
+    "category": "graphic",
+    "type": "Package · Graphic",
+    "client": "머시머시푸드 (나주)",
+    "date": "2026-10-30",
+    "cover": "images/works/musimusi-food/musimusi-cover.jpg",
+    "summary": "나주의 강과 수국을 담은, 잼과 젤라또 상자.",
+    "body": "<p>머시머시푸드의 잼과 젤라또를 담는 손잡이 상자입니다. 흰 바탕에 수채 딸기와 색면을 올리고, 나주 느러지의 강 굽이와 수국, 한반도의 모양을 하나의 상징으로 그렸습니다.</p><p>사진은 인쇄 파일을 바탕으로 만든 연출 이미지입니다.</p>",
+    "published": true,
+    "gallery": [
+      "images/works/musimusi-food/musimusi-jam-front.jpg",
+      "images/works/musimusi-food/musimusi-gelato-front.jpg",
+      "images/works/musimusi-food/musimusi-stack.jpg",
+      "images/works/musimusi-food/musimusi-symbol-parts.jpg",
+      "images/works/musimusi-food/musimusi-symbol.jpg",
+      "images/works/musimusi-food/musimusi-closeup.jpg",
+      "images/works/musimusi-food/musimusi-hands.jpg",
+      "images/works/musimusi-food/musimusi-pads.jpg",
+      "images/works/musimusi-food/musimusi-inside.jpg",
+      "images/works/musimusi-food/musimusi-logo.jpg"
+    ],
+    "gallery_wide": [
+      "images/works/musimusi-food/musimusi-stack.jpg",
+      "images/works/musimusi-food/musimusi-symbol-parts.jpg",
+      "images/works/musimusi-food/musimusi-hands.jpg",
+      "images/works/musimusi-food/musimusi-logo.jpg"
+    ]
+  },
+  {
     "title": "GTS 광주광역시교통약자이동지원센터",
     "slug": "gts",
     "category": "brand",

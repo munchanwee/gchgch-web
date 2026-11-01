@@ -67,7 +67,7 @@
     if(!w){el.innerHTML='<p class="mono">작업을 찾을 수 없습니다</p>';return}
     var next=all[((i>-1?i:0)+1)%all.length];
     document.title=w.title+' — gchgch';
-    var gal=(w.gallery||[]).filter(Boolean);
+    var gal=(w.gallery||[]).filter(Boolean),wide=w.gallery_wide||[];
     el.innerHTML=
       '<a href="works.html" class="wd__back mono">← All Works</a>'+
       '<h1 class="wd__title">'+esc(w.title)+'</h1>'+
@@ -82,7 +82,7 @@
         (w.summary?'<p class="wd__summary">'+esc(w.summary)+'</p>':'')+
         '<div class="wd__text">'+(w.body||'')+'</div>'+
       '</div></div>'+
-      (gal.length?'<div class="wd__gallery">'+gal.map(function(s){return'<img src="'+esc(s)+'" alt="" loading="lazy">'}).join('')+'</div>':'')+
+      (gal.length?'<div class="wd__gallery">'+gal.map(function(s){return'<img'+(wide.indexOf(s)>-1?' class="is-wide"':'')+' src="'+esc(s)+'" alt="" loading="lazy">'}).join('')+'</div>':'')+
       (next&&next!==w?'<div class="wd__next"><span class="mono">Next</span><a href="work.html?id='+encodeURIComponent(next.slug)+'">'+esc(next.title)+' →</a></div>':'');
   }
 })();

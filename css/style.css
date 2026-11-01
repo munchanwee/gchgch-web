@@ -280,7 +280,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .wd__text img{margin:24px 0;border-radius:4px}
 .wd__gallery{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding-bottom:clamp(64px,8vw,120px)}
 .wd__gallery img{width:100%;border-radius:4px}
-.wd__gallery img:first-child:nth-last-child(odd){grid-column:1/-1}
+.wd__gallery img:first-child:nth-last-child(odd),.wd__gallery img.is-wide{grid-column:1/-1}
 .wd__next{display:flex;justify-content:space-between;align-items:center;border-top:2px solid var(--black);padding:28px 0 80px;gap:20px}
 .wd__next a{font-size:clamp(24px,3vw,44px);font-weight:700;letter-spacing:-.03em}
 .wd__next a:hover{color:var(--orange)}
