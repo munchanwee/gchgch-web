@@ -24,7 +24,7 @@
     var filters=document.getElementById('filters');
     var count=document.getElementById('count');
     var used=Object.keys(CATS).filter(function(k){return all.some(function(w){return w.category===k})});
-    filters.innerHTML='<button class="is-on" data-f="all">All</button>'+used.map(function(k){return'<button data-f="'+k+'">'+CATS[k]+'</button>'}).join('');
+    if(filters)filters.innerHTML='<button class="is-on" data-f="all">All</button>'+used.map(function(k){return'<button data-f="'+k+'">'+CATS[k]+'</button>'}).join('');
 
     // 줄마다 카드 2개(8+4, 4+8 번갈아) 또는 3개(4+4+4). 마지막 줄에 카드가 하나만 남지 않게 나눈다.
     function wideFlags(n){
@@ -47,12 +47,12 @@
       grid.innerHTML=list.length?list.map(function(w,i){
         var wide=wides[i];
         return '<a href="work.html?id='+encodeURIComponent(w.slug)+'" class="card'+(wide?' card--w':'')+' is-in">'+
-          '<div class="card__img">'+img(w.cover,w.title,i%3===0?'ph--o':'')+'<span class="card__hover">과정 보기 →</span></div>'+
+          '<div class="card__img">'+img(w.cover,w.title,i%3===0?'ph--o':'')+'</div>'+
           '<div class="card__meta"><h3 class="card__t">'+esc(w.title)+'</h3><span class="mono card__c">'+esc(w.type||CATS[w.category]||'')+'</span></div></a>';
       }).join(''):'<p class="works__empty mono">아직 등록된 작업이 없습니다</p>';
-      count.textContent=pad(total)+' Projects';
+      if(count)count.textContent=pad(total)+' Projects';
     }
-    filters.addEventListener('click',function(e){
+    if(filters)filters.addEventListener('click',function(e){
       var b=e.target.closest('button');if(!b)return;
       filters.querySelectorAll('button').forEach(function(x){x.classList.toggle('is-on',x===b)});
       draw(b.dataset.f);
@@ -83,7 +83,7 @@
     document.title=w.title+' — gchgch';
     var gal=(w.gallery||[]).filter(Boolean),wide=w.gallery_wide||[];
     el.innerHTML=
-      '<a href="works.html" class="wd__back mono">← All Works</a>'+
+      '<a href="index.html" class="wd__back mono">← Works</a>'+
       '<h1 class="wd__title">'+esc(w.title)+'</h1>'+
       '<dl class="wd__meta">'+
         '<div><dt class="mono">Client</dt><dd>'+esc(w.client||'—')+'</dd></div>'+
