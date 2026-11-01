@@ -61,14 +61,15 @@
   }
 
   // 블록: 글과 이미지의 크기·자리를 작업마다 다르게 짠다. 없으면 기존 갤러리 방식으로 그린다.
+  function para(b){return b.li?'<ul>'+b.li.map(function(x){return'<li>'+esc(x)+'</li>'}).join('')+'</ul>':'<p>'+esc(b.p)+'</p>'}
   function blocks(list){
     return '<div class="wb">'+list.map(function(b){
       var alt=esc(b.alt||'');
       if(b.t==='img')return '<figure class="wb__img wb--'+esc(b.size||'wide')+(b.align?' wb--'+esc(b.align):'')+'"><img src="'+esc(b.src)+'" alt="'+alt+'" loading="lazy"></figure>';
-      if(b.t==='text')return '<div class="wb__text'+(b.align==='r'?' wb__text--r':'')+'">'+(b.h?'<h2>'+esc(b.h)+'</h2>':'')+'<p>'+esc(b.p)+'</p></div>';
+      if(b.t==='text')return '<div class="wb__text'+(b.align==='r'?' wb__text--r':'')+'">'+(b.h?'<h2>'+esc(b.h)+'</h2>':'')+para(b)+'</div>';
       if(b.t==='quote')return '<p class="wb__quote">'+esc(b.p)+'</p>';
       if(b.t==='pair')return '<div class="wb__pair" style="grid-template-columns:'+esc(b.ratio||'1fr 1fr')+'"><img src="'+esc(b.a)+'" alt="" loading="lazy"><img src="'+esc(b.b)+'" alt="" loading="lazy"></div>';
-      if(b.t==='side')return '<div class="wb__side'+(b.rev?' wb__side--rev':'')+'"><img src="'+esc(b.src)+'" alt="'+alt+'" loading="lazy"><div class="wb__text wb__text--in">'+(b.h?'<h2>'+esc(b.h)+'</h2>':'')+'<p>'+esc(b.p)+'</p></div></div>';
+      if(b.t==='side')return '<div class="wb__side'+(b.rev?' wb__side--rev':'')+'"><img src="'+esc(b.src)+'" alt="'+alt+'" loading="lazy"><div class="wb__text wb__text--in">'+(b.h?'<h2>'+esc(b.h)+'</h2>':'')+para(b)+'</div></div>';
       return '';
     }).join('')+'</div>';
   }
