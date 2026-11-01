@@ -118,5 +118,69 @@
       "images/works/miss-krispy/miss-krispy-v2-package.jpg",
       "images/works/miss-krispy/miss-krispy-v2-end.jpg"
     ]
+  },
+  {
+    "title": "서강기업",
+    "slug": "seogang",
+    "category": "brand",
+    "type": "CI · Manual · Signage",
+    "client": "서강기업",
+    "date": "2026-04-17",
+    "cover": "images/works/seogang/seogang-cover.jpg",
+    "summary": "변화 속에서도 중심을 잃지 않는, 60도와 120도의 균형.",
+    "body": "<p>서강기업의 통합 기업 아이덴티티입니다. 심볼은 60도와 120도의 각도 체계 위에 설계해, 신뢰와 안정이라는 핵심 가치를 형태로 옮겼습니다.</p><p>심볼과 로고타입, 슬로건, 컬러, 서체, 패턴까지 매뉴얼로 정리했고, 슬로건은 '고객의 눈으로 고객의 마음으로'입니다.</p><p>명함 이미지는 개인정보를 지운 상태입니다. 금속판 이미지는 현판의 재질을 표현한 그래픽입니다.</p>",
+    "published": true,
+    "gallery": [
+      "images/works/seogang/seogang-symbol.jpg",
+      "images/works/seogang/seogang-angle.jpg",
+      "images/works/seogang/seogang-grid.jpg",
+      "images/works/seogang/seogang-metal-symbol.jpg",
+      "images/works/seogang/seogang-plate.jpg"
+      "images/works/seogang/seogang-sign.jpg",
+      "images/works/seogang/seogang-pattern.jpg",
+      "images/works/seogang/seogang-card.jpg",
+      "images/works/seogang/seogang-end.jpg"
+    ],
+    "gallery_wide": [
+      "images/works/seogang/seogang-symbol.jpg",
+      "images/works/seogang/seogang-angle.jpg",
+      "images/works/seogang/seogang-plate.jpg",
+      "images/works/seogang/seogang-sign.jpg",
+      "images/works/seogang/seogang-pattern.jpg",
+      "images/works/seogang/seogang-card.jpg",
+      "images/works/seogang/seogang-end.jpg"
+    ]
+  },
+  {
+    "title": "쓖",
+    "slug": "sseuk",
+    "category": "brand",
+    "type": "BI · Package",
+    "client": "쓖 (여수 이순신광장 수제 초콜릿)",
+    "date": "2024-03-08",
+    "cover": "images/works/sseuk/sseuk-cover.jpg",
+    "summary": "쑥이 슉 들어갔다.",
+    "body": "<p>거문도 해풍쑥을 주재료로 인절미 초콜릿을 만드는 여수 이순신광장의 수제 초콜릿 전문점입니다. 쑥이 초콜릿으로 슉 하고 들어가는 소리를 보여 달라는 요청에서 시작했습니다.</p><p>반복되는 곡선과 직선으로 한옥을 닮은 매장의 형태와 '쓖'이라는 글자를 함께 표현했습니다. 인절미, 자색고구마, 흑임자, 딸기, 카카오 다섯 가지 상자는 재료가 바로 보이도록 그렸습니다.</p><p>상자를 놓고 든 사진은 디자인을 바탕으로 만든 연출 이미지입니다.</p>",
+    "published": true,
+    "gallery": [
+      "images/works/sseuk/sseuk-flavors.jpg",
+      "images/works/sseuk/sseuk-injeolmi.jpg",
+      "images/works/sseuk/sseuk-cacao.jpg",
+      "images/works/sseuk/sseuk-sweetpotato.jpg",
+      "images/works/sseuk/sseuk-stack.jpg",
+      "images/works/sseuk/sseuk-strawberry.jpg",
+      "images/works/sseuk/sseuk-sesame.jpg",
+      "images/works/sseuk/sseuk-hands.jpg",
+      "images/works/sseuk/sseuk-construction.jpg",
+      "images/works/sseuk/sseuk-symbol.jpg",
+      "images/works/sseuk/sseuk-pattern.jpg"
+    ],
+    "gallery_wide": [
+      "images/works/sseuk/sseuk-flavors.jpg",
+      "images/works/sseuk/sseuk-injeolmi.jpg",
+      "images/works/sseuk/sseuk-stack.jpg",
+      "images/works/sseuk/sseuk-hands.jpg",
+      "images/works/sseuk/sseuk-pattern.jpg"
+    ]
   }
 ]
