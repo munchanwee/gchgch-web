@@ -297,7 +297,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .wb--l{align-self:flex-start}
 .wb__text{max-width:560px}
 .wb__text--r{align-self:flex-end}
-.wb__text h2{font-size:clamp(28px,3.2vw,48px);font-weight:700;letter-spacing:-.03em;line-height:1.1;margin-bottom:20px}
+.wb__text h2{font-size:clamp(14px,1.6vw,24px);font-weight:700;letter-spacing:-.02em;line-height:1.2;margin-bottom:12px;color:var(--black)}
 .wb__text p{font-size:clamp(16px,1.25vw,19px);line-height:1.7;color:var(--ink-2);text-wrap:pretty}
 .wb__text ul,.wd__text ul{list-style:none;padding:0;margin:0}
 .wb__text li,.wd__text li{position:relative;padding-left:1em;font-size:clamp(16px,1.25vw,19px);line-height:1.7;color:var(--ink-2)}
