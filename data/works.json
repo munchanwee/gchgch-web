@@ -126,30 +126,84 @@
     "type": "CI · Manual · Signage",
     "client": "서강기업",
     "date": "2026-04-17",
-    "cover": "images/works/seogang/seogang-cover.jpg",
-    "summary": "변화 속에서도 중심을 잃지 않는, 60도와 120도의 균형.",
-    "body": "<p>서강기업의 통합 기업 아이덴티티입니다. 심볼은 60도와 120도의 각도 체계 위에 설계해, 신뢰와 안정이라는 핵심 가치를 형태로 옮겼습니다.</p><p>심볼과 로고타입, 슬로건, 컬러, 서체, 패턴까지 매뉴얼로 정리했고, 슬로건은 '고객의 눈으로 고객의 마음으로'입니다.</p><p>명함 이미지는 개인정보를 지운 상태입니다. 금속판 이미지는 현판의 재질을 표현한 그래픽입니다.</p>",
+    "cover": "images/works/seogang/seogang-v3-cover.jpg",
+    "summary": "가장 단단한 각도 위에 세운 얼굴.",
+    "body": "",
     "published": true,
-    "gallery": [
-      "images/works/seogang/seogang-symbol.jpg",
-      "images/works/seogang/seogang-angle.jpg",
-      "images/works/seogang/seogang-grid.jpg",
-      "images/works/seogang/seogang-metal-symbol.jpg",
-      "images/works/seogang/seogang-plate.jpg",
-      "images/works/seogang/seogang-sign.jpg",
-      "images/works/seogang/seogang-pattern.jpg",
-      "images/works/seogang/seogang-card.jpg",
-      "images/works/seogang/seogang-end.jpg"
+    "gallery": [],
+    "blocks": [
+      {
+        "t": "img",
+        "src": "images/works/seogang/seogang-v3-truss.jpg",
+        "size": "full"
+      },
+      {
+        "t": "text",
+        "h": "60°",
+        "p": "서강기업은 건설과 엔지니어링의 회사입니다. 구조물을 떠받치는 트러스는 삼각형으로 짜이고, 정삼각형의 60도는 힘을 고르게 나누는 각도입니다. 심볼은 이 각도에서 시작합니다."
+      },
+      {
+        "t": "img",
+        "src": "images/works/seogang/seogang-v3-steps.jpg",
+        "size": "wide"
+      },
+      {
+        "t": "text",
+        "h": "네 조각",
+        "p": "사다리꼴 둘과 평행사변형 둘. 모든 선은 60도와 120도 안에서만 움직입니다. 변화 속에서도 중심을 잃지 않는 균형을 형태로 옮겼습니다.",
+        "align": "r"
+      },
+      {
+        "t": "img",
+        "src": "images/works/seogang/seogang-v3-structure.jpg",
+        "size": "full"
+      },
+      {
+        "t": "side",
+        "src": "images/works/seogang/seogang-v3-color.jpg",
+        "h": "두 개의 블루",
+        "p": "밝은 블루는 개방성과 역동성을, 어두운 블루는 전문성과 신뢰를 맡습니다. 두 색이 만나 심볼에 입체감을 만듭니다."
+      },
+      {
+        "t": "img",
+        "src": "images/works/seogang/seogang-v3-signature.jpg",
+        "size": "mid"
+      },
+      {
+        "t": "quote",
+        "p": "고객의 눈으로 고객의 마음으로"
+      },
+      {
+        "t": "text",
+        "h": "38쪽의 규칙",
+        "p": "심볼과 로고타입, 슬로건, 색, 서체, 패턴까지 같은 원칙으로 묶어 매뉴얼로 정리했습니다. 담당자가 필요한 쪽만 펼쳐 바로 쓸 수 있도록 구성했습니다."
+      },
+      {
+        "t": "img",
+        "src": "images/works/seogang/seogang-v3-manual.jpg",
+        "size": "full"
+      },
+      {
+        "t": "pair",
+        "a": "images/works/seogang/seogang-v3-motif.jpg",
+        "b": "images/works/seogang/seogang-v3-pattern.jpg",
+        "ratio": "3fr 2fr"
+      },
+      {
+        "t": "side",
+        "src": "images/works/seogang/seogang-v3-sign.jpg",
+        "h": "벽 위에서",
+        "p": "같은 각도는 사무실 현판과 명함까지 이어집니다. 명함은 개인정보를 지운 상태로 싣습니다.",
+        "rev": true
+      },
+      {
+        "t": "img",
+        "src": "images/works/seogang/seogang-v3-card.jpg",
+        "size": "small",
+        "align": "r"
+      }
     ],
-    "gallery_wide": [
-      "images/works/seogang/seogang-symbol.jpg",
-      "images/works/seogang/seogang-angle.jpg",
-      "images/works/seogang/seogang-plate.jpg",
-      "images/works/seogang/seogang-sign.jpg",
-      "images/works/seogang/seogang-pattern.jpg",
-      "images/works/seogang/seogang-card.jpg",
-      "images/works/seogang/seogang-end.jpg"
-    ]
+    "note": "트러스 사진은 연출 이미지입니다."
   },
   {
     "title": "쓖",

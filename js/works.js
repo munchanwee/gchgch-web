@@ -60,6 +60,19 @@
     draw('all');
   }
 
+  // 블록: 글과 이미지의 크기·자리를 작업마다 다르게 짠다. 없으면 기존 갤러리 방식으로 그린다.
+  function blocks(list){
+    return '<div class="wb">'+list.map(function(b){
+      var alt=esc(b.alt||'');
+      if(b.t==='img')return '<figure class="wb__img wb--'+esc(b.size||'wide')+(b.align?' wb--'+esc(b.align):'')+'"><img src="'+esc(b.src)+'" alt="'+alt+'" loading="lazy"></figure>';
+      if(b.t==='text')return '<div class="wb__text'+(b.align==='r'?' wb__text--r':'')+'">'+(b.h?'<h2>'+esc(b.h)+'</h2>':'')+'<p>'+esc(b.p)+'</p></div>';
+      if(b.t==='quote')return '<p class="wb__quote">'+esc(b.p)+'</p>';
+      if(b.t==='pair')return '<div class="wb__pair" style="grid-template-columns:'+esc(b.ratio||'1fr 1fr')+'"><img src="'+esc(b.a)+'" alt="" loading="lazy"><img src="'+esc(b.b)+'" alt="" loading="lazy"></div>';
+      if(b.t==='side')return '<div class="wb__side'+(b.rev?' wb__side--rev':'')+'"><img src="'+esc(b.src)+'" alt="'+alt+'" loading="lazy"><div class="wb__text wb__text--in">'+(b.h?'<h2>'+esc(b.h)+'</h2>':'')+'<p>'+esc(b.p)+'</p></div></div>';
+      return '';
+    }).join('')+'</div>';
+  }
+
   function renderDetail(all){
     var id=new URLSearchParams(location.search).get('id');
     var i=all.findIndex(function(w){return w.slug===id});
@@ -77,12 +90,13 @@
         '<div><dt class="mono">Scope</dt><dd>'+esc(w.type||'—')+'</dd></div>'+
         '<div><dt class="mono">Year</dt><dd>'+esc((w.date||'').slice(0,4)||'—')+'</dd></div>'+
       '</dl>'+
+      (w.blocks?'<p class="wd__lead">'+esc(w.summary||'')+'</p>'+blocks(w.blocks)+(w.note?'<p class="wd__note mono">'+esc(w.note)+'</p>':''):
       '<div class="wd__cover">'+img(w.cover,w.title,'ph--o')+'</div>'+
       '<div class="wd__body"><span class="mono" style="color:var(--orange)">Process</span><div>'+
         (w.summary?'<p class="wd__summary">'+esc(w.summary)+'</p>':'')+
         '<div class="wd__text">'+(w.body||'')+'</div>'+
       '</div></div>'+
-      (gal.length?'<div class="wd__gallery">'+gal.map(function(s){return'<img'+(wide.indexOf(s)>-1?' class="is-wide"':'')+' src="'+esc(s)+'" alt="" loading="lazy">'}).join('')+'</div>':'')+
+      (gal.length?'<div class="wd__gallery">'+gal.map(function(s){return'<img'+(wide.indexOf(s)>-1?' class="is-wide"':'')+' src="'+esc(s)+'" alt="" loading="lazy">'}).join('')+'</div>':''))+
       (next&&next!==w?'<div class="wd__next"><span class="mono">Next</span><a href="work.html?id='+encodeURIComponent(next.slug)+'">'+esc(next.title)+' →</a></div>':'');
   }
 })();
