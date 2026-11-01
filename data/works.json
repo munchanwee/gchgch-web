@@ -96,49 +96,27 @@
     "type": "Character · BI",
     "client": "Miss Krispy (뉴질랜드 프라이드치킨)",
     "date": "2022-06-23",
-    "cover": "images/works/miss-krispy/miss-krispy-cover.jpg",
-    "summary": "",
-    "body": "",
-    "gallery": [],
-    "published": true
-  },
-  {
-    "title": "미나미",
-    "slug": "minami",
-    "category": "graphic",
-    "type": "BI · Graphic · Signage",
-    "client": "미나미 (광주 용봉동 이자카야)",
-    "date": "2022-10-06",
-    "cover": "images/works/minami/minami-cover.jpg",
-    "summary": "",
-    "body": "",
-    "gallery": [],
-    "published": true
-  },
-  {
-    "title": "만대재",
-    "slug": "mandaejae",
-    "category": "space",
-    "type": "Planning · Construction",
-    "client": "만대재 (순천만 한옥카페)",
-    "date": "2022-10-20",
-    "cover": "images/works/mandaejae/mandaejae-cover.jpg",
-    "summary": "",
-    "body": "",
-    "gallery": [],
-    "published": true
-  },
-  {
-    "title": "스테이 구도",
-    "slug": "stay-gudo",
-    "category": "space",
-    "type": "Planning · Construction",
-    "client": "스테이 구도",
-    "date": "2022-06-26",
-    "cover": "images/works/stay-gudo/stay-gudo-cover.jpg",
-    "summary": "",
-    "body": "",
-    "gallery": [],
-    "published": true
+    "cover": "images/works/miss-krispy/miss-krispy-v2-cover.jpg",
+    "summary": "강하고 야무진 얼굴로, 뉴질랜드의 프라이드치킨.",
+    "body": "<p>뉴질랜드에서 프라이드치킨 브랜드를 준비하는 한국인 고객의 일입니다. 고객은 머릿속에 확고한 취향을 갖고 있었고, 로고와 함께 당찬 여성의 캐릭터를 요청했습니다.</p><p>현지 매장은 넓은 도로가에 길게 지어진 노란 건물이었습니다. 그 분위기에 맞춰, 강인하고 야무진 인상의 캐릭터와 손글씨 로고를 그렸습니다.</p><p>포장과 티셔츠 사진은 디자인을 바탕으로 만든 연출 이미지입니다.</p>",
+    "gallery": [
+      "images/works/miss-krispy/miss-krispy-v2-store.jpg",
+      "images/works/miss-krispy/miss-krispy-v2-comic.jpg",
+      "images/works/miss-krispy/miss-krispy-v2-face.jpg",
+      "images/works/miss-krispy/miss-krispy-v2-face-red.jpg",
+      "images/works/miss-krispy/miss-krispy-v2-chicken.jpg",
+      "images/works/miss-krispy/miss-krispy-v2-package.jpg",
+      "images/works/miss-krispy/miss-krispy-v2-tee.jpg",
+      "images/works/miss-krispy/miss-krispy-v2-door.jpg",
+      "images/works/miss-krispy/miss-krispy-v2-end.jpg"
+    ],
+    "published": true,
+    "gallery_wide": [
+      "images/works/miss-krispy/miss-krispy-v2-store.jpg",
+      "images/works/miss-krispy/miss-krispy-v2-comic.jpg",
+      "images/works/miss-krispy/miss-krispy-v2-chicken.jpg",
+      "images/works/miss-krispy/miss-krispy-v2-package.jpg",
+      "images/works/miss-krispy/miss-krispy-v2-end.jpg"
+    ]
   }
 ]
