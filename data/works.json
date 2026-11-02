@@ -387,5 +387,763 @@
       }
     ],
     "note": "리플릿, 포스터, 캔버스 이미지는 목업 합성 이미지"
+  },
+  {
+    "title": "미나미",
+    "slug": "minami",
+    "category": "brand",
+    "type": "BI · Graphic · Interior",
+    "client": "미나미 (광주 용봉동 이자카야)",
+    "date": "2022-10-05",
+    "cover": "images/works/minami/minami-cover.jpg",
+    "summary": "이자카야 브랜드 아이덴티티, 그래픽 및 공간 기획, 시공",
+    "body": "",
+    "published": true,
+    "gallery": [],
+    "blocks": [
+      {
+        "t": "img",
+        "src": "images/works/minami/minami-cover.jpg",
+        "size": "full"
+      },
+      {
+        "t": "text",
+        "h": "브랜드 스토리",
+        "li": [
+          "클라이언트 결정 명칭 '미나미'의 南(남쪽), 美波(아름다운 파도) 의미 활용",
+          "슬로건 '南の美波(남쪽의 아름다운 파도)' 도출",
+          "남쪽: 전라남도, 전남대학교 / 파도: 건배 시 술잔 위로 이는 물결"
+        ]
+      },
+      {
+        "t": "pair",
+        "a": "images/works/minami/minami-wordmark.jpg",
+        "b": "images/works/minami/minami-toast.jpg",
+        "ratio": "7fr 5fr"
+      },
+      {
+        "t": "text",
+        "h": "그래픽",
+        "align": "r",
+        "li": [
+          "맥주 거품과 파도를 결합한 대표 그래픽 개발",
+          "ミナミ 글자에 거품이 흐르는 형태의 이모지 확장",
+          "아이덴티티 컬러: 적색, 황색"
+        ]
+      },
+      {
+        "t": "img",
+        "src": "images/works/minami/minami-emoji.jpg",
+        "size": "full"
+      },
+      {
+        "t": "img",
+        "src": "images/works/minami/minami-menu-type.jpg",
+        "size": "wide"
+      },
+      {
+        "t": "pair",
+        "a": "images/works/minami/minami-badge.jpg",
+        "b": "images/works/minami/minami-menu.jpg",
+        "ratio": "1fr 1fr"
+      },
+      {
+        "t": "img",
+        "src": "images/works/minami/minami-posters.jpg",
+        "size": "wide"
+      },
+      {
+        "t": "img",
+        "src": "images/works/minami/minami-exterior.jpg",
+        "size": "full"
+      },
+      {
+        "t": "side",
+        "src": "images/works/minami/minami-shutter.jpg",
+        "h": "익스테리어",
+        "rev": true,
+        "li": [
+          "방수포 소재 어닝형 간판",
+          "겨자색 캔버스 소재 노렌",
+          "브라운톤 알루미늄 샷시"
+        ]
+      },
+      {
+        "t": "pair",
+        "a": "images/works/minami/minami-inside.jpg",
+        "b": "images/works/minami/minami-counter.jpg",
+        "ratio": "3fr 2fr"
+      },
+      {
+        "t": "text",
+        "h": "포토존",
+        "li": [
+          "화장실 동선 공간에 오사카 지하철 플랫폼 콘셉트 적용",
+          "남바역, 도톤보리 지하철 사인 조사 및 재현"
+        ]
+      },
+      {
+        "t": "img",
+        "src": "images/works/minami/minami-namba.jpg",
+        "size": "wide"
+      },
+      {
+        "t": "pair",
+        "a": "images/works/minami/minami-platform.jpg",
+        "b": "images/works/minami/minami-info.jpg",
+        "ratio": "1fr 1fr"
+      }
+    ],
+    "note": "뱃지, 메뉴 이미지는 목업 합성 이미지"
+  },
+  {
+    "title": "스테이 은신희",
+    "slug": "eunsinhee",
+    "category": "space",
+    "type": "Naming · BI · Planning · Construction",
+    "client": "은신희 (나주 한옥스테이)",
+    "date": "2022-11-17",
+    "cover": "images/works/eunsinhee/eunsinhee-cover.jpg",
+    "summary": "한옥 스테이 네이밍, 브랜드 아이덴티티, 공간 기획 및 시공",
+    "body": "",
+    "published": true,
+    "gallery": [],
+    "blocks": [
+      {
+        "t": "img",
+        "src": "images/works/eunsinhee/eunsinhee-cover.jpg",
+        "size": "full"
+      },
+      {
+        "t": "text",
+        "h": "네이밍",
+        "li": [
+          "핵심 키워드: 단절, 고립, 휴식, 안정감",
+          "숨바꼭질의 한자어 隱身戲 기반 명칭 개발",
+          "심볼: 담장으로 구분된 공간과 사각 프레임 속에 숨은 글자 표현"
+        ]
+      },
+      {
+        "t": "img",
+        "src": "images/works/eunsinhee/eunsinhee-path.jpg",
+        "size": "full"
+      },
+      {
+        "t": "side",
+        "src": "images/works/eunsinhee/eunsinhee-side.jpg",
+        "h": "공간 기획",
+        "li": [
+          "나주 번화가 인근 골목 끝 구석진 대지 조건 활용",
+          "외부에서 드러나지 않는 진입 구조 계획",
+          "툇마루와 내부 사이 벽을 통한 외부 시선 차단"
+        ]
+      },
+      {
+        "t": "img",
+        "src": "images/works/eunsinhee/eunsinhee-entry.jpg",
+        "size": "wide"
+      },
+      {
+        "t": "text",
+        "h": "평면",
+        "align": "r",
+        "li": [
+          "일반적인 한옥과 달리 가로로 길게 구분한 평면",
+          "전통 구조와 레이아웃을 벗어난 비형식적 공간 구분"
+        ]
+      },
+      {
+        "t": "pair",
+        "a": "images/works/eunsinhee/eunsinhee-lounge.jpg",
+        "b": "images/works/eunsinhee/eunsinhee-rest.jpg",
+        "ratio": "3fr 2fr"
+      },
+      {
+        "t": "side",
+        "src": "images/works/eunsinhee/eunsinhee-bed.jpg",
+        "h": "실내",
+        "rev": true,
+        "li": [
+          "저조도 조명 중심의 휴식 공간 구성"
+        ]
+      },
+      {
+        "t": "pair",
+        "a": "images/works/eunsinhee/eunsinhee-tree.jpg",
+        "b": "images/works/eunsinhee/eunsinhee-day.jpg",
+        "ratio": "1fr 1fr"
+      },
+      {
+        "t": "text",
+        "h": "어플리케이션",
+        "li": [
+          "이용안내 리플릿: 십자접 구성, 전면 전개 시 공간 사진 포스터로 전환",
+          "엽서: 공간 사진 기반 제작 및 비치",
+          "캔버스 액자: 브랜드 아이덴티티 일러스트레이션 제작"
+        ]
+      },
+      {
+        "t": "img",
+        "src": "images/works/eunsinhee/eunsinhee-leaflet-spread.jpg",
+        "size": "wide"
+      },
+      {
+        "t": "pair",
+        "a": "images/works/eunsinhee/eunsinhee-leaflet.jpg",
+        "b": "images/works/eunsinhee/eunsinhee-poster.jpg",
+        "ratio": "1fr 1fr"
+      },
+      {
+        "t": "pair",
+        "a": "images/works/eunsinhee/eunsinhee-postcard.jpg",
+        "b": "images/works/eunsinhee/eunsinhee-canvas.jpg",
+        "ratio": "1fr 1fr"
+      },
+      {
+        "t": "img",
+        "src": "images/works/eunsinhee/eunsinhee-end.jpg",
+        "size": "mid"
+      }
+    ],
+    "note": "리플릿, 포스터, 엽서, 캔버스 이미지는 목업 합성 이미지"
+  },
+  {
+    "title": "만대재",
+    "slug": "mandaejae",
+    "category": "space",
+    "type": "BI · Graphic · Planning · Construction",
+    "client": "만대재 (순천만습지 한옥카페)",
+    "date": "2022-10-20",
+    "cover": "images/works/mandaejae/mandaejae-cover.jpg",
+    "summary": "한옥 카페 브랜드 아이덴티티, 그래픽, 공간 기획 및 시공",
+    "body": "",
+    "published": true,
+    "gallery": [],
+    "blocks": [
+      {
+        "t": "img",
+        "src": "images/works/mandaejae/mandaejae-cover.jpg",
+        "size": "full"
+      },
+      {
+        "t": "text",
+        "h": "브랜드",
+        "li": [
+          "대상지: 전남 순천만습지 앞 기존 한옥의 카페 리뉴얼",
+          "기존 한옥명 '만대재' 유지, 영문명 House in the Bay",
+          "핵심 키워드: 여운, 두루미, 갈대, 노을"
+        ]
+      },
+      {
+        "t": "side",
+        "src": "images/works/mandaejae/mandaejae-logo.jpg",
+        "h": "심볼",
+        "li": [
+          "순천만 상징 흑두루미 형상화",
+          "약과 무늬, 기와, 두루미 깃털의 중의적 표현",
+          "그리드 기반 핸드드로잉 그래픽",
+          "한글, 한문, 영문 워드마크 구성"
+        ]
+      },
+      {
+        "t": "img",
+        "src": "images/works/mandaejae/mandaejae-logo-color.jpg",
+        "size": "mid"
+      },
+      {
+        "t": "pair",
+        "a": "images/works/mandaejae/mandaejae-flying.jpg",
+        "b": "images/works/mandaejae/mandaejae-screen.jpg",
+        "ratio": "3fr 2fr"
+      },
+      {
+        "t": "text",
+        "h": "확장 그래픽",
+        "align": "r",
+        "li": [
+          "본채 캔버스 액자: 노을 하늘을 나는 흑두루미",
+          "별채 병풍: 갈대밭의 흑두루미, 분할 출력 구성"
+        ]
+      },
+      {
+        "t": "img",
+        "src": "images/works/mandaejae/mandaejae-window.jpg",
+        "size": "full"
+      },
+      {
+        "t": "side",
+        "src": "images/works/mandaejae/mandaejae-wall.jpg",
+        "h": "선택적 차경",
+        "rev": true,
+        "li": [
+          "주변 건물, 간판을 가리는 담장형 아트월 설계",
+          "아트월의 사인, 조경, 포토존 겸용",
+          "그 외 시선을 별채와 마당으로 유도"
+        ]
+      },
+      {
+        "t": "img",
+        "src": "images/works/mandaejae/mandaejae-hall.jpg",
+        "size": "full"
+      },
+      {
+        "t": "text",
+        "h": "공간 구성",
+        "li": [
+          "본채: 주문, 결제 및 개방형 취식 공간",
+          "별채: 정적인 독채형 공간",
+          "약과 제작 공간과 휴게 공간 분리"
+        ]
+      },
+      {
+        "t": "pair",
+        "a": "images/works/mandaejae/mandaejae-annex.jpg",
+        "b": "images/works/mandaejae/mandaejae-gaze.jpg",
+        "ratio": "3fr 2fr"
+      },
+      {
+        "t": "pair",
+        "a": "images/works/mandaejae/mandaejae-sign.jpg",
+        "b": "images/works/mandaejae/mandaejae-entrance.jpg",
+        "ratio": "2fr 3fr"
+      },
+      {
+        "t": "pair",
+        "a": "images/works/mandaejae/mandaejae-menu.jpg",
+        "b": "images/works/mandaejae/mandaejae-menu-mock.jpg",
+        "ratio": "1fr 1fr"
+      },
+      {
+        "t": "img",
+        "src": "images/works/mandaejae/mandaejae-end.jpg",
+        "size": "full"
+      }
+    ],
+    "note": "메뉴 일부 이미지는 목업 합성 이미지"
+  },
+  {
+    "title": "스테이 담담",
+    "slug": "damdam",
+    "category": "brand",
+    "type": "Naming · BI · Leaflet · Web",
+    "client": "스테이 담담 (담양 봉산면 한옥스테이)",
+    "date": "2023-03-08",
+    "cover": "images/works/damdam/damdam-cover.jpg",
+    "summary": "한옥 스테이 네이밍 및 브랜드 아이덴티티 개발",
+    "body": "",
+    "published": true,
+    "gallery": [],
+    "blocks": [
+      {
+        "t": "img",
+        "src": "images/works/damdam/damdam-cover.jpg",
+        "size": "full"
+      },
+      {
+        "t": "text",
+        "h": "네이밍",
+        "li": [
+          "대상지: 전남 담양군 봉산면, 대나무 숲을 등진 한옥",
+          "담양의 '담'과 '담담하다'의 의미 결합"
+        ]
+      },
+      {
+        "t": "side",
+        "src": "images/works/damdam/damdam-symbol.jpg",
+        "h": "심볼",
+        "li": [
+          "본채 뒤편 대나무 숲 모티프",
+          "한자 淡淡의 반복을 대나무 군집과 기와 형태로 단순화"
+        ]
+      },
+      {
+        "t": "img",
+        "src": "images/works/damdam/damdam-signature.jpg",
+        "size": "mid"
+      },
+      {
+        "t": "pair",
+        "a": "images/works/damdam/damdam-poster.jpg",
+        "b": "images/works/damdam/damdam-cover-spread.jpg",
+        "ratio": "2fr 3fr"
+      },
+      {
+        "t": "text",
+        "h": "이용안내 리플릿",
+        "align": "r",
+        "li": [
+          "표지: 기와지붕 너머 대나무 숲 이미지",
+          "표지 뒷면: 내부 창으로 바라본 대숲 이미지",
+          "본채, 별채 안내 그래픽 및 이용안내",
+          "전면 전개 시 대나무 숲 포스터로 전환"
+        ]
+      },
+      {
+        "t": "img",
+        "src": "images/works/damdam/damdam-info-spread.jpg",
+        "size": "wide"
+      },
+      {
+        "t": "img",
+        "src": "images/works/damdam/damdam-mock-set.jpg",
+        "size": "full"
+      },
+      {
+        "t": "pair",
+        "a": "images/works/damdam/damdam-mock-open.jpg",
+        "b": "images/works/damdam/damdam-mock-poster.jpg",
+        "ratio": "1fr 1fr"
+      },
+      {
+        "t": "text",
+        "h": "예약 웹사이트",
+        "li": [
+          "브랜드 아이덴티티 적용 웹사이트 디자인"
+        ]
+      },
+      {
+        "t": "pair",
+        "a": "images/works/damdam/damdam-web-pc.jpg",
+        "b": "images/works/damdam/damdam-web-mobile.jpg",
+        "ratio": "3fr 2fr"
+      },
+      {
+        "t": "img",
+        "src": "images/works/damdam/damdam-bamboo.jpg",
+        "size": "full"
+      }
+    ],
+    "note": "리플릿 일부 이미지는 목업 합성 이미지"
+  },
+  {
+    "title": "해이나주",
+    "slug": "heynaju",
+    "category": "brand",
+    "type": "Naming · BI · Character",
+    "client": "해이나주 (나주 과원동 한옥카페)",
+    "date": "2023-04-03",
+    "cover": "images/works/heynaju/heynaju-cover.jpg",
+    "summary": "한옥 카페 네이밍, 브랜드 아이덴티티 및 캐릭터 개발",
+    "body": "",
+    "published": true,
+    "gallery": [],
+    "blocks": [
+      {
+        "t": "img",
+        "src": "images/works/heynaju/heynaju-cover.jpg",
+        "size": "full"
+      },
+      {
+        "t": "text",
+        "h": "네이밍",
+        "li": [
+          "대상지: 전남 나주시 과원동, 넓은 마당의 한옥",
+          "'해이'와 영문 'HEY'의 결합으로 여유와 친숙함 표현",
+          "슬로건: 가끔 해이해져도 괜찮아"
+        ]
+      },
+      {
+        "t": "side",
+        "src": "images/works/heynaju/heynaju-logo.jpg",
+        "h": "심볼",
+        "li": [
+          "나무늘보 캐릭터 기반 심볼 개발",
+          "상황별 캐릭터 확장안 구성"
+        ]
+      },
+      {
+        "t": "pair",
+        "a": "images/works/heynaju/heynaju-hang.jpg",
+        "b": "images/works/heynaju/heynaju-drink.jpg",
+        "ratio": "1fr 1fr"
+      },
+      {
+        "t": "img",
+        "src": "images/works/heynaju/heynaju-signature.jpg",
+        "size": "wide"
+      },
+      {
+        "t": "text",
+        "h": "어플리케이션",
+        "align": "r",
+        "li": [
+          "브랜드 컬러와 캐릭터를 적용한 메뉴판 디자인"
+        ]
+      },
+      {
+        "t": "pair",
+        "a": "images/works/heynaju/heynaju-menu.jpg",
+        "b": "images/works/heynaju/heynaju-menu-mock.jpg",
+        "ratio": "1fr 1fr"
+      }
+    ],
+    "note": "메뉴판 거치 이미지는 목업 합성 이미지"
+  },
+  {
+    "title": "광주광역시장애인종합지원센터",
+    "slug": "gjdsc",
+    "category": "brand",
+    "type": "CI · Application",
+    "client": "광주광역시장애인종합지원센터",
+    "date": "2024-03-08",
+    "cover": "images/works/gjdsc/gjdsc-cover.jpg",
+    "summary": "장애인 지원기관 기업 아이덴티티(CI) 개발 및 통합 어플리케이션 적용",
+    "body": "",
+    "published": true,
+    "gallery": [],
+    "blocks": [
+      {
+        "t": "img",
+        "src": "images/works/gjdsc/gjdsc-cover.jpg",
+        "size": "full"
+      },
+      {
+        "t": "side",
+        "src": "images/works/gjdsc/gjdsc-concept.jpg",
+        "h": "기업 가치",
+        "li": [
+          "약칭 '광장터'에서 키워드 도출",
+          "광장: 사람들이 모이는 곳 / 쉼터: 휴식의 공간"
+        ]
+      },
+      {
+        "t": "text",
+        "h": "심볼",
+        "align": "r",
+        "li": [
+          "원형 광장 모티프",
+          "영문 이니셜 G, J 결합 및 쉼표 형상화",
+          "브랜드 컬러: 옐로우, 오렌지, 핑크 계열"
+        ]
+      },
+      {
+        "t": "img",
+        "src": "images/works/gjdsc/gjdsc-grid.jpg",
+        "size": "full"
+      },
+      {
+        "t": "pair",
+        "a": "images/works/gjdsc/gjdsc-sign-short.jpg",
+        "b": "images/works/gjdsc/gjdsc-sign-full.jpg",
+        "ratio": "1fr 1fr"
+      },
+      {
+        "t": "side",
+        "src": "images/works/gjdsc/gjdsc-family.jpg",
+        "h": "기관 통합",
+        "rev": true,
+        "li": [
+          "광주 지역 장애인 지원기관 CI의 광장터 심볼 통합",
+          "명함, 사원증 등 어플리케이션 일괄 적용"
+        ]
+      },
+      {
+        "t": "img",
+        "src": "images/works/gjdsc/gjdsc-cards.jpg",
+        "size": "mid"
+      }
+    ],
+    "note": "명함 이미지는 목업 합성 이미지"
+  },
+  {
+    "title": "그래, 우리는 아직 여기에 있다",
+    "slug": "ogeori",
+    "category": "graphic",
+    "type": "Editorial · Illustration",
+    "client": "자체 프로젝트",
+    "date": "2021-10-12",
+    "cover": "images/works/ogeori/ogeori-cover.jpg",
+    "summary": "오거리 방앗간 주제 에세이 독립출판물 기획 및 편집 디자인",
+    "body": "",
+    "published": true,
+    "gallery": [],
+    "blocks": [
+      {
+        "t": "img",
+        "src": "images/works/ogeori/ogeori-cover.jpg",
+        "size": "full"
+      },
+      {
+        "t": "text",
+        "h": "기획",
+        "li": [
+          "오래된 동네 방앗간의 회상과 일화로 구성한 에세이",
+          "인터뷰 기반 원고 작성부터 독립출판물 편집까지 진행"
+        ]
+      },
+      {
+        "t": "side",
+        "src": "images/works/ogeori/ogeori-front.jpg",
+        "h": "표지",
+        "li": [
+          "펜과 마카 핸드드로잉 삽화 적용",
+          "사진 대신 일러스트를 통한 글의 분위기 전달"
+        ]
+      },
+      {
+        "t": "pair",
+        "a": "images/works/ogeori/ogeori-mill.jpg",
+        "b": "images/works/ogeori/ogeori-machines.jpg",
+        "ratio": "1fr 1fr"
+      },
+      {
+        "t": "img",
+        "src": "images/works/ogeori/ogeori-book.jpg",
+        "size": "wide"
+      },
+      {
+        "t": "pair",
+        "a": "images/works/ogeori/ogeori-open.jpg",
+        "b": "images/works/ogeori/ogeori-back.jpg",
+        "ratio": "1fr 1fr"
+      },
+      {
+        "t": "text",
+        "h": "내지",
+        "align": "r",
+        "li": [
+          "구술 사투리를 살린 서브 타이틀 구성",
+          "방앗간과 동네 사진의 본문 배치"
+        ]
+      },
+      {
+        "t": "img",
+        "src": "images/works/ogeori/ogeori-spread-a.jpg",
+        "size": "wide"
+      },
+      {
+        "t": "pair",
+        "a": "images/works/ogeori/ogeori-spread-b.jpg",
+        "b": "images/works/ogeori/ogeori-spread-c.jpg",
+        "ratio": "1fr 1fr"
+      }
+    ],
+    "note": "책 이미지는 목업 합성 이미지"
+  },
+  {
+    "title": "뜨거운 삼류",
+    "slug": "samryu",
+    "category": "space",
+    "type": "Planning · Construction",
+    "client": "뜨거운 삼류 (라멘 전문점)",
+    "date": "2022-01-30",
+    "cover": "images/works/samryu/samryu-cover.jpg",
+    "summary": "라멘 전문점 공간 기획 및 시공",
+    "body": "",
+    "published": true,
+    "gallery": [],
+    "blocks": [
+      {
+        "t": "img",
+        "src": "images/works/samryu/samryu-cover.jpg",
+        "size": "full"
+      },
+      {
+        "t": "text",
+        "h": "프로젝트",
+        "li": [
+          "라멘 트럭에서 두 번째 매장까지 이어진 프로젝트",
+          "경쟁에서 벗어나 '삼류'를 자칭하는 브랜드의 매장"
+        ]
+      },
+      {
+        "t": "img",
+        "src": "images/works/samryu/samryu-night.jpg",
+        "size": "mid"
+      },
+      {
+        "t": "img",
+        "src": "images/works/samryu/samryu-kitchen.jpg",
+        "size": "full"
+      }
+    ]
+  },
+  {
+    "title": "수완동 근린생활시설",
+    "slug": "suwan",
+    "category": "space",
+    "type": "Construction",
+    "client": "광주 수완동 근린생활시설",
+    "date": "2023-04-08",
+    "cover": "images/works/suwan/suwan-cover.jpg",
+    "summary": "근린생활시설 신축공사 시공",
+    "body": "",
+    "published": true,
+    "gallery": [],
+    "blocks": [
+      {
+        "t": "img",
+        "src": "images/works/suwan/suwan-cover.jpg",
+        "size": "full"
+      },
+      {
+        "t": "text",
+        "h": "과업",
+        "li": [
+          "대상지: 광주광역시 수완동",
+          "건축주 및 건축사사무소 설계 도면 기반 신축 시공",
+          "터파기, 구조, 창호, 조적, 수장, 조경 공정 수행"
+        ]
+      },
+      {
+        "t": "pair",
+        "a": "images/works/suwan/suwan-block.jpg",
+        "b": "images/works/suwan/suwan-light.jpg",
+        "ratio": "2fr 3fr"
+      },
+      {
+        "t": "text",
+        "h": "영롱쌓기",
+        "align": "r",
+        "li": [
+          "외관 주요 면 영롱쌓기 벽돌 시공",
+          "구멍을 통한 내부 빛과 그림자 연출",
+          "측면 기준 조적면 정렬 관리"
+        ]
+      },
+      {
+        "t": "side",
+        "src": "images/works/suwan/suwan-wall.jpg",
+        "h": "창호",
+        "li": [
+          "외관 품질을 고려한 고사양 창호 적용",
+          "샷시 색상 및 후레싱 마감 조율"
+        ]
+      },
+      {
+        "t": "img",
+        "src": "images/works/suwan/suwan-stair.jpg",
+        "size": "mid"
+      }
+    ]
+  },
+  {
+    "title": "계림동 DIT공간",
+    "slug": "gyerim",
+    "category": "space",
+    "type": "Construction",
+    "client": "두잇투게더 (광주 계림동)",
+    "date": "2022-01-01",
+    "cover": "images/works/gyerim/gyerim-cover.jpg",
+    "summary": "유휴 점포 공유공간 조성",
+    "body": "",
+    "published": true,
+    "gallery": [],
+    "blocks": [
+      {
+        "t": "text",
+        "h": "과업",
+        "li": [
+          "광주 계림동 오래된 점포의 공유공간 전환",
+          "노후 구조 상태를 고려한 공간 조성"
+        ]
+      },
+      {
+        "t": "pair",
+        "a": "images/works/gyerim/gyerim-light.jpg",
+        "b": "images/works/gyerim/gyerim-hall.jpg",
+        "ratio": "1fr 1fr"
+      }
+    ]
   }
 ]
