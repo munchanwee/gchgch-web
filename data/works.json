@@ -254,5 +254,138 @@
       "images/works/sseuk/sseuk-hands.jpg",
       "images/works/sseuk/sseuk-pattern.jpg"
     ]
+  },
+  {
+    "title": "스테이 구도",
+    "slug": "goodo",
+    "category": "space",
+    "type": "BI · Planning · Construction",
+    "client": "스테이 구도 (목포 죽동 한옥스테이)",
+    "date": "2022-06-26",
+    "cover": "images/works/goodo/goodo-cover.jpg",
+    "summary": "한옥 스테이 공간 기획, 시공 및 브랜드 아이덴티티 개발",
+    "body": "",
+    "published": true,
+    "gallery": [],
+    "blocks": [
+      {
+        "t": "img",
+        "src": "images/works/goodo/goodo-cover.jpg",
+        "size": "full"
+      },
+      {
+        "t": "text",
+        "h": "명칭",
+        "li": [
+          "대상지: 전남 목포시 죽동 한옥촌",
+          "클라이언트 결정 명칭 '구도'에 舊道(오래된 길), 構圖(구도를 잡다)의 이중 의미 부여"
+        ]
+      },
+      {
+        "t": "side",
+        "src": "images/works/goodo/goodo-roofs.jpg",
+        "h": "심볼",
+        "li": [
+          "현장 앞 다리에서 내려다본 기와지붕 군집의 형상화",
+          "초성 ㄱ, ㄷ 기반 심볼 설계",
+          "심볼 라인과 유사한 형태의 서체 적용"
+        ]
+      },
+      {
+        "t": "img",
+        "src": "images/works/goodo/goodo-signature.jpg",
+        "size": "mid"
+      },
+      {
+        "t": "img",
+        "src": "images/works/goodo/goodo-axis.jpg",
+        "size": "full"
+      },
+      {
+        "t": "text",
+        "h": "공간 구성",
+        "align": "r",
+        "li": [
+          "앞마당과 뒷마당을 잇는 통로형 평면 계획",
+          "폴딩도어 적용을 통한 내외부 경계 최소화",
+          "마루, 부엌, 거실 동일 바닥재 적용"
+        ]
+      },
+      {
+        "t": "pair",
+        "a": "images/works/goodo/goodo-backyard.jpg",
+        "b": "images/works/goodo/goodo-floor.jpg",
+        "ratio": "3fr 2fr"
+      },
+      {
+        "t": "img",
+        "src": "images/works/goodo/goodo-borrowed.jpg",
+        "size": "full"
+      },
+      {
+        "t": "side",
+        "src": "images/works/goodo/goodo-bedroom.jpg",
+        "h": "침실 차경",
+        "rev": true,
+        "li": [
+          "건물 동쪽 절벽의 이끼와 돌담을 차경으로 활용",
+          "낮은 조도 중심의 침실 계획"
+        ]
+      },
+      {
+        "t": "pair",
+        "a": "images/works/goodo/goodo-bath.jpg",
+        "b": "images/works/goodo/goodo-tile.jpg",
+        "ratio": "1fr 1fr"
+      },
+      {
+        "t": "text",
+        "h": "시공",
+        "li": [
+          "기와 교체, 구조목 보강, 바닥 단열 및 콘크리트 타설",
+          "주요 노출부 타일 측면 45° 마감",
+          "외부 바닥, 계단, 벽체 적벽돌 시공"
+        ]
+      },
+      {
+        "t": "pair",
+        "a": "images/works/goodo/goodo-eaves.jpg",
+        "b": "images/works/goodo/goodo-steps.jpg",
+        "ratio": "2fr 3fr"
+      },
+      {
+        "t": "text",
+        "h": "어플리케이션",
+        "align": "r",
+        "li": [
+          "이용안내 리플릿: 십자접 구성, 전면 전개 시 돌담 사진 포스터로 전환",
+          "플레이리스트: 15곡 구성의 카세트 테이프 제작",
+          "일러스트레이션: 죽동 한옥촌 그래픽 및 캔버스 액자 제작"
+        ]
+      },
+      {
+        "t": "pair",
+        "a": "images/works/goodo/goodo-leaflet.jpg",
+        "b": "images/works/goodo/goodo-poster.jpg",
+        "ratio": "1fr 1fr"
+      },
+      {
+        "t": "img",
+        "src": "images/works/goodo/goodo-cassette.jpg",
+        "size": "wide"
+      },
+      {
+        "t": "pair",
+        "a": "images/works/goodo/goodo-drawing.jpg",
+        "b": "images/works/goodo/goodo-canvas.jpg",
+        "ratio": "1fr 1fr"
+      },
+      {
+        "t": "img",
+        "src": "images/works/goodo/goodo-front.jpg",
+        "size": "full"
+      }
+    ],
+    "note": "리플릿, 포스터, 캔버스 이미지는 목업 합성 이미지"
   }
 ]
