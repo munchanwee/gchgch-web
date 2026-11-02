@@ -296,18 +296,16 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .wb--r{align-self:flex-end}
 .wb--l{align-self:flex-start}
 .wb__text{max-width:560px}
-.wb__text--r{align-self:flex-end}
 .wb__text h2{font-size:clamp(14px,1.6vw,24px);font-weight:700;letter-spacing:-.02em;line-height:1.2;margin-bottom:12px;color:var(--black)}
 .wb__text p{font-size:clamp(16px,1.25vw,19px);line-height:1.7;color:var(--ink-2);text-wrap:pretty}
 .wb__text ul,.wd__text ul{list-style:none;padding:0;margin:0}
 .wb__text li,.wd__text li{position:relative;padding-left:1em;font-size:clamp(16px,1.25vw,19px);line-height:1.7;color:var(--ink-2)}
 .wb__text li::before,.wd__text li::before{content:'-';position:absolute;left:0}
-.wb__quote{text-align:center;font-size:clamp(24px,3vw,44px);font-weight:600;letter-spacing:-.03em;color:#004C8F}
+.wb__quote{text-align:left;font-size:clamp(24px,3vw,44px);font-weight:600;letter-spacing:-.03em;color:#004C8F}
 .wb__pair{display:grid;gap:20px;align-items:center}
-.wb__side{display:grid;grid-template-columns:7fr 5fr;gap:clamp(32px,6vw,96px);align-items:center}
-.wb__side--rev{grid-template-columns:5fr 7fr}
-.wb__side--rev img{order:2}
-@media (max-width:760px){.wb--mid,.wb--small{width:100%}.wb__pair,.wb__side,.wb__side--rev{grid-template-columns:1fr!important}.wb__side--rev img{order:0}}
+.wb__side{display:grid;grid-template-columns:5fr 7fr;gap:clamp(32px,6vw,96px);align-items:center}
+.wb__side img{order:2}
+@media (max-width:760px){.wb--mid,.wb--small{width:100%}.wb__pair,.wb__side{grid-template-columns:1fr!important}.wb__side img{order:0}}
 @media (max-width:760px){.wd__meta{grid-template-columns:1fr 1fr}.wd__body{grid-template-columns:1fr}.wd__gallery{grid-template-columns:1fr}}
 
 /* 첫 화면: 작업만 */
