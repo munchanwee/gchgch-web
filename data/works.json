@@ -8,7 +8,7 @@
     "date": "2026-10-30",
     "cover": "images/works/musimusi-food/musimusi-cover.jpg",
     "summary": "식품 브랜드 패키지 디자인 개발",
-    "body": "<ul><li>고객사: 머시머시푸드 (전남 나주)</li><li>과업 범위: 손잡이형 패키지 2종, 속패드 패턴, 지역 상징 그래픽 개발</li><li>그래픽 시스템: 백색 바탕에 수채 딸기 및 색면 적용</li><li>지역 상징: 느러지 지형, 수국, 한반도 형상 결합</li><li>게재 이미지: 인쇄 파일 기반 연출 이미지</li></ul>",
+    "body": "<ul><li>고객사: 머시머시푸드 (전남 나주)</li><li>과업 범위: 손잡이형 패키지 2종, 속패드 패턴, 지역 상징 그래픽 개발</li><li>그래픽 시스템: 백색 바탕에 수채 딸기 및 색면 적용</li><li>지역 상징: 느러지 지형, 수국, 한반도 형상 결합</li></ul>",
     "published": true,
     "gallery": [
       "images/works/musimusi-food/musimusi-jam-front.jpg",
@@ -38,7 +38,7 @@
     "date": "2024-03-08",
     "cover": "images/works/gts/gts-v2-cover.jpg",
     "summary": "교통약자 이동지원 기관 네이밍 및 CI 개발",
-    "body": "<ul><li>고객사: 광주광역시교통약자이동지원센터</li><li>네이밍: 영문 기관명 머리글자 기반 약칭 GTS 제안</li><li>심볼: 휠체어, 안전손잡이, 지팡이의 형태를 G·T·S로 조형화</li><li>적용 매체: 명함, 사원증, 이동지원 차량 '새빛콜'</li><li>게재 이미지: 명함 및 사원증은 연출 이미지</li></ul>",
+    "body": "<ul><li>고객사: 광주광역시교통약자이동지원센터</li><li>네이밍: 영문 기관명 머리글자 기반 약칭 GTS 제안</li><li>심볼: 휠체어, 안전손잡이, 지팡이의 형태를 G·T·S로 조형화</li><li>적용 매체: 명함, 사원증, 이동지원 차량 '새빛콜'</li></ul>",
     "gallery": [
       "images/works/gts/gts-v2-vehicle.jpg",
       "images/works/gts/gts-v2-motif.jpg",
@@ -68,7 +68,7 @@
     "date": "2024-03-08",
     "cover": "images/works/seuktei/seuktei-v2-cover.jpg",
     "summary": "한옥 스테이 네이밍 및 브랜드 아이덴티티 개발",
-    "body": "<ul><li>대상지: 전남 목포시 죽교동</li><li>네이밍: 의성어 '스윽'과 STAY 결합, 영문명 LOOK AT THE SKY</li><li>심볼: 담장, 기와지붕, 하늘의 중첩 구조를 조형화</li><li>적용 매체: 이용안내 리플릿, 예약 웹사이트</li><li>게재 이미지: 표지 및 말미의 하늘 사진은 연출 이미지</li></ul>",
+    "body": "<ul><li>대상지: 전남 목포시 죽교동</li><li>네이밍: 의성어 '스윽'과 STAY 결합, 영문명 LOOK AT THE SKY</li><li>심볼: 담장, 기와지붕, 하늘의 중첩 구조를 조형화</li><li>적용 매체: 이용안내 리플릿, 예약 웹사이트</li></ul>",
     "gallery": [
       "images/works/seuktei/seuktei-v2-layers.jpg",
       "images/works/seuktei/seuktei-v2-symbol-sky.jpg",
@@ -98,7 +98,7 @@
     "date": "2022-06-23",
     "cover": "images/works/miss-krispy/miss-krispy-v2-cover.jpg",
     "summary": "프라이드치킨 브랜드 캐릭터 및 BI 개발",
-    "body": "<ul><li>고객사: 뉴질랜드 프라이드치킨 전문점</li><li>과업 범위: 브랜드 로고, 여성 캐릭터 개발</li><li>적용 매체: 포장재, 티셔츠</li><li>게재 이미지: 포장재 및 티셔츠는 연출 이미지</li><li>코믹 페이지 및 치킨 패턴: 포트폴리오용 확장 그래픽</li></ul>",
+    "body": "<ul><li>고객사: 뉴질랜드 프라이드치킨 전문점</li><li>과업 범위: 브랜드 로고, 여성 캐릭터 개발</li><li>적용 매체: 포장재, 티셔츠</li><li>코믹 페이지 및 치킨 패턴: 포트폴리오용 확장 그래픽</li></ul>",
     "gallery": [
       "images/works/miss-krispy/miss-krispy-v2-store.jpg",
       "images/works/miss-krispy/miss-krispy-v2-comic.jpg",
@@ -221,7 +221,7 @@
         "align": "r"
       }
     ],
-    "note": "트러스 및 표지석 이미지는 연출 이미지, 명함은 개인정보 삭제본"
+    "note": "명함은 개인정보 삭제본"
   },
   {
     "title": "스테이 구도",
@@ -353,8 +353,7 @@
         "src": "images/works/goodo/goodo-front.jpg",
         "size": "full"
       }
-    ],
-    "note": "리플릿, 포스터, 캔버스 이미지는 목업 합성 이미지"
+    ]
   },
   {
     "title": "미나미",
@@ -461,8 +460,7 @@
         "b": "images/works/minami/minami-info.jpg",
         "ratio": "1fr 1fr"
       }
-    ],
-    "note": "뱃지, 메뉴 이미지는 목업 합성 이미지"
+    ]
   },
   {
     "title": "스테이 은신희",
@@ -572,8 +570,7 @@
         "src": "images/works/eunsinhee/eunsinhee-end.jpg",
         "size": "mid"
       }
-    ],
-    "note": "리플릿, 포스터, 엽서, 캔버스 이미지는 목업 합성 이미지"
+    ]
   },
   {
     "title": "만대재",
@@ -686,8 +683,7 @@
         "src": "images/works/mandaejae/mandaejae-end.jpg",
         "size": "full"
       }
-    ],
-    "note": "메뉴 일부 이미지는 목업 합성 이미지"
+    ]
   },
   {
     "title": "스테이 담담",
@@ -780,8 +776,7 @@
         "src": "images/works/damdam/damdam-bamboo.jpg",
         "size": "full"
       }
-    ],
-    "note": "리플릿 일부 이미지는 목업 합성 이미지"
+    ]
   },
   {
     "title": "해이나주",
@@ -844,8 +839,7 @@
         "b": "images/works/heynaju/heynaju-menu-mock.jpg",
         "ratio": "1fr 1fr"
       }
-    ],
-    "note": "메뉴판 거치 이미지는 목업 합성 이미지"
+    ]
   },
   {
     "title": "광주광역시장애인종합지원센터",
@@ -910,8 +904,7 @@
         "src": "images/works/gjdsc/gjdsc-cards.jpg",
         "size": "mid"
       }
-    ],
-    "note": "명함 이미지는 목업 합성 이미지"
+    ]
   },
   {
     "title": "그래, 우리는 아직 여기에 있다",
@@ -985,8 +978,7 @@
         "b": "images/works/ogeori/ogeori-spread-c.jpg",
         "ratio": "1fr 1fr"
       }
-    ],
-    "note": "책 이미지는 목업 합성 이미지"
+    ]
   },
   {
     "title": "뜨거운 삼류",
@@ -1192,7 +1184,6 @@
         "b": "images/works/sseuk/sseuk-v3-sesame.jpg",
         "ratio": "1fr 1fr"
       }
-    ],
-    "note": "패키지 입체 이미지는 목업 합성 이미지"
+    ]
   }
 ]
