@@ -226,12 +226,12 @@
   {
     "title": "스테이 구도",
     "slug": "goodo",
-    "category": "space",
-    "type": "BI · Planning · Construction",
+    "category": "brand",
+    "type": "BI · Space Planning",
     "client": "스테이 구도 (목포 죽동 한옥스테이)",
     "date": "2022-06-26",
     "cover": "images/works/goodo/goodo-cover.jpg",
-    "summary": "한옥 스테이 공간 기획, 시공 및 브랜드 아이덴티티 개발",
+    "summary": "한옥 스테이 공간 기획 및 브랜드 아이덴티티 개발",
     "body": "",
     "published": true,
     "gallery": [],
@@ -308,21 +308,6 @@
       },
       {
         "t": "text",
-        "h": "시공",
-        "li": [
-          "기와 교체, 구조목 보강, 바닥 단열 및 콘크리트 타설",
-          "주요 노출부 타일 측면 45° 마감",
-          "외부 바닥, 계단, 벽체 적벽돌 시공"
-        ]
-      },
-      {
-        "t": "pair",
-        "a": "images/works/goodo/goodo-eaves.jpg",
-        "b": "images/works/goodo/goodo-steps.jpg",
-        "ratio": "2fr 3fr"
-      },
-      {
-        "t": "text",
         "h": "어플리케이션",
         "align": "r",
         "li": [
@@ -363,7 +348,7 @@
     "client": "미나미 (광주 용봉동 이자카야)",
     "date": "2022-10-05",
     "cover": "images/works/minami/minami-cover.jpg",
-    "summary": "이자카야 브랜드 아이덴티티, 그래픽 및 공간 기획, 시공",
+    "summary": "이자카야 브랜드 아이덴티티, 그래픽 및 공간 기획",
     "body": "",
     "published": true,
     "gallery": [],
@@ -465,12 +450,12 @@
   {
     "title": "스테이 은신희",
     "slug": "eunsinhee",
-    "category": "space",
-    "type": "Naming · BI · Planning · Construction",
+    "category": "brand",
+    "type": "Naming · BI · Space Planning",
     "client": "은신희 (나주 한옥스테이)",
     "date": "2022-11-17",
     "cover": "images/works/eunsinhee/eunsinhee-cover.jpg",
-    "summary": "한옥 스테이 네이밍, 브랜드 아이덴티티, 공간 기획 및 시공",
+    "summary": "한옥 스테이 네이밍, 브랜드 아이덴티티 및 공간 기획",
     "body": "",
     "published": true,
     "gallery": [],
@@ -575,12 +560,12 @@
   {
     "title": "만대재",
     "slug": "mandaejae",
-    "category": "space",
-    "type": "BI · Graphic · Planning · Construction",
+    "category": "brand",
+    "type": "BI · Graphic · Space Planning",
     "client": "만대재 (순천만습지 한옥카페)",
     "date": "2022-10-20",
     "cover": "images/works/mandaejae/mandaejae-cover.jpg",
-    "summary": "한옥 카페 브랜드 아이덴티티, 그래픽, 공간 기획 및 시공",
+    "summary": "한옥 카페 브랜드 아이덴티티, 그래픽 및 공간 기획",
     "body": "",
     "published": true,
     "gallery": [],
@@ -976,132 +961,6 @@
         "t": "pair",
         "a": "images/works/ogeori/ogeori-spread-b.jpg",
         "b": "images/works/ogeori/ogeori-spread-c.jpg",
-        "ratio": "1fr 1fr"
-      }
-    ]
-  },
-  {
-    "title": "뜨거운 삼류",
-    "slug": "samryu",
-    "category": "space",
-    "type": "Planning · Construction",
-    "client": "뜨거운 삼류 (라멘 전문점)",
-    "date": "2022-01-30",
-    "cover": "images/works/samryu/samryu-cover.jpg",
-    "summary": "라멘 전문점 공간 기획 및 시공",
-    "body": "",
-    "published": true,
-    "gallery": [],
-    "blocks": [
-      {
-        "t": "img",
-        "src": "images/works/samryu/samryu-cover.jpg",
-        "size": "full"
-      },
-      {
-        "t": "text",
-        "h": "프로젝트",
-        "li": [
-          "라멘 트럭에서 두 번째 매장까지 이어진 프로젝트",
-          "경쟁에서 벗어나 '삼류'를 자칭하는 브랜드의 매장"
-        ]
-      },
-      {
-        "t": "img",
-        "src": "images/works/samryu/samryu-night.jpg",
-        "size": "mid"
-      },
-      {
-        "t": "img",
-        "src": "images/works/samryu/samryu-kitchen.jpg",
-        "size": "full"
-      }
-    ]
-  },
-  {
-    "title": "수완동 근린생활시설",
-    "slug": "suwan",
-    "category": "space",
-    "type": "Construction",
-    "client": "광주 수완동 근린생활시설",
-    "date": "2023-04-08",
-    "cover": "images/works/suwan/suwan-cover.jpg",
-    "summary": "근린생활시설 신축공사 시공",
-    "body": "",
-    "published": true,
-    "gallery": [],
-    "blocks": [
-      {
-        "t": "img",
-        "src": "images/works/suwan/suwan-cover.jpg",
-        "size": "full"
-      },
-      {
-        "t": "text",
-        "h": "과업",
-        "li": [
-          "대상지: 광주광역시 수완동",
-          "건축주 및 건축사사무소 설계 도면 기반 신축 시공",
-          "터파기, 구조, 창호, 조적, 수장, 조경 공정 수행"
-        ]
-      },
-      {
-        "t": "pair",
-        "a": "images/works/suwan/suwan-block.jpg",
-        "b": "images/works/suwan/suwan-light.jpg",
-        "ratio": "2fr 3fr"
-      },
-      {
-        "t": "text",
-        "h": "영롱쌓기",
-        "align": "r",
-        "li": [
-          "외관 주요 면 영롱쌓기 벽돌 시공",
-          "구멍을 통한 내부 빛과 그림자 연출",
-          "측면 기준 조적면 정렬 관리"
-        ]
-      },
-      {
-        "t": "side",
-        "src": "images/works/suwan/suwan-wall.jpg",
-        "h": "창호",
-        "li": [
-          "외관 품질을 고려한 고사양 창호 적용",
-          "샷시 색상 및 후레싱 마감 조율"
-        ]
-      },
-      {
-        "t": "img",
-        "src": "images/works/suwan/suwan-stair.jpg",
-        "size": "mid"
-      }
-    ]
-  },
-  {
-    "title": "계림동 DIT공간",
-    "slug": "gyerim",
-    "category": "space",
-    "type": "Construction",
-    "client": "두잇투게더 (광주 계림동)",
-    "date": "2022-01-01",
-    "cover": "images/works/gyerim/gyerim-cover.jpg",
-    "summary": "유휴 점포 공유공간 조성",
-    "body": "",
-    "published": true,
-    "gallery": [],
-    "blocks": [
-      {
-        "t": "text",
-        "h": "과업",
-        "li": [
-          "광주 계림동 오래된 점포의 공유공간 전환",
-          "노후 구조 상태를 고려한 공간 조성"
-        ]
-      },
-      {
-        "t": "pair",
-        "a": "images/works/gyerim/gyerim-light.jpg",
-        "b": "images/works/gyerim/gyerim-hall.jpg",
         "ratio": "1fr 1fr"
       }
     ]
