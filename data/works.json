@@ -224,38 +224,6 @@
     "note": "트러스 및 표지석 이미지는 연출 이미지, 명함은 개인정보 삭제본"
   },
   {
-    "title": "쓖",
-    "slug": "sseuk",
-    "category": "brand",
-    "type": "BI · Package",
-    "client": "쓖 (여수 이순신광장 수제 초콜릿)",
-    "date": "2024-03-08",
-    "cover": "images/works/sseuk/sseuk-cover.jpg",
-    "summary": "수제 초콜릿 브랜드 아이덴티티 및 패키지 개발",
-    "body": "<ul><li>대상지: 전남 여수시 이순신광장</li><li>핵심 원료: 거문도 해풍쑥</li><li>심볼: 곡선과 직선의 결합으로 한옥과 글자 '쓖'을 조형화</li><li>패키지: 인절미, 자색고구마, 흑임자, 딸기, 카카오 5종</li><li>게재 이미지: 상자 사진은 연출 이미지, 심볼 반복 패턴은 포트폴리오용 확장 그래픽</li></ul>",
-    "published": true,
-    "gallery": [
-      "images/works/sseuk/sseuk-flavors.jpg",
-      "images/works/sseuk/sseuk-injeolmi.jpg",
-      "images/works/sseuk/sseuk-cacao.jpg",
-      "images/works/sseuk/sseuk-sweetpotato.jpg",
-      "images/works/sseuk/sseuk-stack.jpg",
-      "images/works/sseuk/sseuk-strawberry.jpg",
-      "images/works/sseuk/sseuk-sesame.jpg",
-      "images/works/sseuk/sseuk-hands.jpg",
-      "images/works/sseuk/sseuk-construction.jpg",
-      "images/works/sseuk/sseuk-symbol.jpg",
-      "images/works/sseuk/sseuk-pattern.jpg"
-    ],
-    "gallery_wide": [
-      "images/works/sseuk/sseuk-flavors.jpg",
-      "images/works/sseuk/sseuk-injeolmi.jpg",
-      "images/works/sseuk/sseuk-stack.jpg",
-      "images/works/sseuk/sseuk-hands.jpg",
-      "images/works/sseuk/sseuk-pattern.jpg"
-    ]
-  },
-  {
     "title": "스테이 구도",
     "slug": "goodo",
     "category": "space",
@@ -1145,5 +1113,86 @@
         "ratio": "1fr 1fr"
       }
     ]
+  },
+  {
+    "title": "쓖",
+    "slug": "sseuk",
+    "category": "brand",
+    "type": "BI · Package",
+    "client": "쓖 (여수 이순신광장 수제 초콜릿)",
+    "date": "2024-03-08",
+    "cover": "images/works/sseuk/sseuk-v3-cover.jpg",
+    "summary": "수제 초콜릿 브랜드 아이덴티티 및 패키지 개발",
+    "body": "",
+    "published": true,
+    "gallery": [],
+    "blocks": [
+      {
+        "t": "img",
+        "src": "images/works/sseuk/sseuk-v3-cover.jpg",
+        "size": "full"
+      },
+      {
+        "t": "text",
+        "h": "과업",
+        "li": [
+          "대상지: 전남 여수시 이순신광장",
+          "핵심 원료: 거문도 해풍쑥",
+          "외자 명칭 '쓖'의 심볼화 및 워드마크 개발",
+          "쑥이 초콜릿으로 들어가는 의성어 '슉'의 시각화 요청 반영"
+        ]
+      },
+      {
+        "t": "side",
+        "src": "images/works/sseuk/sseuk-v3-construction.jpg",
+        "h": "심볼",
+        "li": [
+          "반복되는 곡선과 직선의 결합",
+          "한옥 형태의 매장과 글자 '쓖'의 중의적 표현"
+        ]
+      },
+      {
+        "t": "side",
+        "src": "images/works/sseuk/sseuk-v3-types.jpg",
+        "h": "심볼 타입",
+        "li": [
+          "라인 타입: 스탬프 형태",
+          "솔리드 타입: 상자에 담긴 초콜릿 형상화",
+          "컬러: 쑥의 그린, 초콜릿의 다크 그레이"
+        ]
+      },
+      {
+        "t": "text",
+        "h": "패키지",
+        "li": [
+          "인절미, 카카오, 자색고구마, 딸기, 흑임자 5종 개별 패키지",
+          "동일한 구성 위에 주재료 그래픽과 색상 적용",
+          "주재료의 직관적 확인을 위한 그래픽 설계"
+        ]
+      },
+      {
+        "t": "img",
+        "src": "images/works/sseuk/sseuk-v3-fronts.jpg",
+        "size": "full"
+      },
+      {
+        "t": "pair",
+        "a": "images/works/sseuk/sseuk-v3-injeolmi.jpg",
+        "b": "images/works/sseuk/sseuk-v3-strawberry.jpg",
+        "ratio": "1fr 1fr"
+      },
+      {
+        "t": "img",
+        "src": "images/works/sseuk/sseuk-v3-group.jpg",
+        "size": "full"
+      },
+      {
+        "t": "pair",
+        "a": "images/works/sseuk/sseuk-v3-pair.jpg",
+        "b": "images/works/sseuk/sseuk-v3-sesame.jpg",
+        "ratio": "1fr 1fr"
+      }
+    ],
+    "note": "패키지 입체 이미지는 목업 합성 이미지"
   }
 ]
