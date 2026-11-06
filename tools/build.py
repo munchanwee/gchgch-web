@@ -305,16 +305,27 @@ TAIL = """<section class="contact" style="padding-top:clamp(72px,8vw,120px)">
 """
 
 
+DESC_MAX = 80  # 네이버 서치어드바이저 권장 길이
+
+
+def page_desc(summary, cname, loc):
+    """작업 페이지 설명문. 80자를 넘으면 덜 중요한 것부터 뺀다."""
+    summary = summary.rstrip(".")
+    for parts in ([summary, f"{cname}({loc})" if loc else cname, "그치그치(GCHGCH STUDIO) 작업"],
+                  [summary, cname, "그치그치 작업"],
+                  [summary, "그치그치 작업"],
+                  [summary]):
+        text = ". ".join(p for p in parts if p) + "."
+        if len(text) <= DESC_MAX:
+            return text
+    return summary[:DESC_MAX - 1] + "…"
+
+
 def work_page(w, nxt):
     url = f"{SITE}/work/{w['slug']}/"
     cname, loc, scope = client_name(w), w.get("location") or "", w.get("type") or ""
     title = f"{w['title']} — {w.get('summary') or scope} | 그치그치 GCHGCH STUDIO"
-    desc = " ".join(x for x in [
-        (w.get("summary") or "").rstrip(".") + ".",
-        f"고객 {cname}" + (f", {loc}" if loc else "") + ".",
-        f"범위 {scope}." if scope else "",
-        "그치그치(GCHGCH STUDIO) 작업.",
-    ] if x)
+    desc = page_desc(w.get("summary") or scope, cname, loc)
     image = absu(w["cover"]) if w.get("cover") else absu("assets/og.png")
     creative = {
         "@type": "CreativeWork", "@id": url + "#work", "name": w["title"], "headline": w.get("summary"),
