@@ -1,19 +1,21 @@
 /* gchgch — 포트폴리오 렌더러
-   data/works.json 을 읽어 메인(#grid), 목록(works.html), 상세(work.html)를 그린다.
-   데이터는 관리자(Pages CMS)에서 수정하면 자동 반영된다. 이 파일은 고칠 필요 없음. */
+   data/works.json 을 읽어 메인(#grid)을 그린다. 작업 상세는 tools/build.py 가 /work/<slug>/ 정적 페이지로 만든다.
+   상세(#wd)는 정적 페이지가 아닐 때만 그린다. 마크업을 바꾸면 tools/build.py 도 같이 바꾼다. */
 (function(){
   var CATS={brand:'Brand',graphic:'Graphic',digital:'Digital',space:'Space'};
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
   function pad(n){return(n<10?'0':'')+n}
   function img(src,alt,cls){
-    return src?'<img src="'+esc(src)+'" alt="'+esc(alt)+'" loading="lazy">':'<div class="ph '+(cls||'')+' mono">Image</div>';
+    return src?'<img src="/'+esc(String(src).replace(/^\//,''))+'" alt="'+esc(alt)+'" loading="lazy">':'<div class="ph '+(cls||'')+' mono">Image</div>';
   }
 
-  fetch('data/works.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(data){
+  var wd=document.getElementById('wd');
+  if(!document.getElementById('grid')&&!(wd&&!wd.dataset.static))return;
+  fetch('/data/works.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(data){
     var works=(Array.isArray(data)?data:(data.works||[])).filter(function(w){return w.published!==false});
     works.sort(function(a,b){return (b.date||'').localeCompare(a.date||'')});
     if(document.getElementById('grid')) renderGrid(works);
-    if(document.getElementById('wd')) renderDetail(works);
+    if(wd&&!wd.dataset.static) renderDetail(works);
   }).catch(function(){
     var g=document.getElementById('grid');if(g)g.innerHTML='<p class="works__empty mono">작업을 불러오지 못했습니다</p>';
   });
@@ -46,7 +48,7 @@
       var wides=wideFlags(list.length);
       grid.innerHTML=list.length?list.map(function(w,i){
         var wide=wides[i];
-        return '<a href="work.html?id='+encodeURIComponent(w.slug)+'" class="card'+(wide?' card--w':'')+' is-in">'+
+        return '<a href="/work/'+encodeURIComponent(w.slug)+'/" class="card'+(wide?' card--w':'')+' is-in">'+
           '<div class="card__img">'+img(w.cover,w.title,i%3===0?'ph--o':'')+'</div>'+
           '<div class="card__meta"><h3 class="card__t">'+esc(w.title)+'</h3><span class="mono card__c">'+esc(w.type||CATS[w.category]||'')+'</span></div></a>';
       }).join(''):'<p class="works__empty mono">아직 등록된 작업이 없습니다</p>';
@@ -62,8 +64,8 @@
 
   // 블록: 글과 이미지의 크기와 자리를 작업마다 다르게 짠다. 없으면 기존 갤러리 방식으로 그린다.
   function para(b){return b.li?'<ul>'+b.li.map(function(x){return'<li>'+esc(x)+'</li>'}).join('')+'</ul>':'<p>'+esc(b.p)+'</p>'}
-  function blocks(list){
-    return '<div class="wb">'+list.map(function(b){
+  function blocks(list,body){
+    return '<div class="wb">'+(body?'<div class="wb__text"><h2>개요</h2>'+body+'</div>':'')+list.map(function(b){
       var alt=esc(b.alt||'');
       if(b.t==='img')return '<figure class="wb__img wb--'+esc(b.size||'wide')+(b.align?' wb--'+esc(b.align):'')+'"><img src="'+esc(b.src)+'" alt="'+alt+'" loading="lazy"></figure>';
       if(b.t==='text')return '<div class="wb__text">'+(b.h?'<h2>'+esc(b.h)+'</h2>':'')+para(b)+'</div>';
@@ -83,7 +85,7 @@
     document.title=w.title+' — gchgch';
     var gal=(w.gallery||[]).filter(Boolean),wide=w.gallery_wide||[];
     el.innerHTML=
-      '<a href="index.html" class="wd__back mono">← Works</a>'+
+      '<a href="/" class="wd__back mono">← Works</a>'+
       '<h1 class="wd__title">'+esc(w.title)+'</h1>'+
       '<dl class="wd__meta">'+
         '<div><dt class="mono">Client</dt><dd>'+esc(w.client||'—')+'</dd></div>'+
@@ -91,13 +93,13 @@
         '<div><dt class="mono">Scope</dt><dd>'+esc(w.type||'—')+'</dd></div>'+
         '<div><dt class="mono">Year</dt><dd>'+esc((w.date||'').slice(0,4)||'—')+'</dd></div>'+
       '</dl>'+
-      (w.blocks?'<p class="wd__lead">'+esc(w.summary||'')+'</p>'+blocks(w.blocks)+(w.note?'<p class="wd__note mono">'+esc(w.note)+'</p>':''):
+      (w.blocks?'<p class="wd__lead">'+esc(w.summary||'')+'</p>'+blocks(w.blocks,w.body)+(w.note?'<p class="wd__note mono">'+esc(w.note)+'</p>':''):
       '<div class="wd__cover">'+img(w.cover,w.title,'ph--o')+'</div>'+
       '<div class="wd__body"><span class="mono" style="color:var(--orange)">Process</span><div>'+
         (w.summary?'<p class="wd__summary">'+esc(w.summary)+'</p>':'')+
         '<div class="wd__text">'+(w.body||'')+'</div>'+
       '</div></div>'+
       (gal.length?'<div class="wd__gallery">'+gal.map(function(s){return'<img'+(wide.indexOf(s)>-1?' class="is-wide"':'')+' src="'+esc(s)+'" alt="" loading="lazy">'}).join('')+'</div>':''))+
-      (next&&next!==w?'<div class="wd__next"><span class="mono">Next</span><a href="work.html?id='+encodeURIComponent(next.slug)+'">'+esc(next.title)+' →</a></div>':'');
+      (next&&next!==w?'<div class="wd__next"><span class="mono">Next</span><a href="/work/'+encodeURIComponent(next.slug)+'/">'+esc(next.title)+' →</a></div>':'');
   }
 })();

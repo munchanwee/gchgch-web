@@ -275,7 +275,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .wd__body{display:grid;grid-template-columns:200px 1fr;gap:40px;padding:clamp(64px,8vw,120px) 0}
 .wd__summary{font-size:clamp(22px,2.2vw,32px);font-weight:700;line-height:1.4;letter-spacing:-.02em;text-wrap:pretty}
 .wd__text{margin-top:32px;font-size:17px;color:var(--ink-2);max-width:760px}
-.wd__text p+p{margin-top:1em}
+.wd__text p+p,.wd__text p+ul,.wb__text p+p{margin-top:1em}
 .wd__text h2,.wd__text h3{color:var(--black);margin:1.6em 0 .5em;letter-spacing:-.02em}
 .wd__text img{margin:24px 0;border-radius:4px}
 .wd__gallery{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding-bottom:clamp(64px,8vw,120px)}
