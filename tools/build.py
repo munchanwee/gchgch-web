@@ -233,8 +233,7 @@ def detail_html(w, nxt):
     meta = (f'<dl class="wd__meta">'
             f'<div><dt class="mono">Client</dt><dd>{esc(w.get("client") or "—")}</dd></div>'
             f'<div><dt class="mono">Category</dt><dd>{esc(CATS.get(w.get("category"), "—"))}</dd></div>'
-            f'<div><dt class="mono">Scope</dt><dd>{esc(w.get("type") or "—")}</dd></div>'
-            f'<div><dt class="mono">Year</dt><dd>{esc((w.get("date") or "")[:4] or "—")}</dd></div></dl>')
+            f'<div><dt class="mono">Scope</dt><dd>{esc(w.get("type") or "—")}</dd></div></dl>')
     h = '<a href="/" class="wd__back mono">← Works</a>' + f'<h1 class="wd__title">{esc(w["title"])}</h1>' + meta
     if w.get("blocks"):
         h += f'<p class="wd__lead">{esc(w.get("summary"))}</p>' + blocks_html(w)
@@ -331,7 +330,7 @@ def work_page(w, nxt):
         "@type": "CreativeWork", "@id": url + "#work", "name": w["title"], "headline": w.get("summary"),
         "description": text_of(w.get("body")) or desc, "url": url, "inLanguage": "ko",
         "genre": scope, "keywords": [k.strip() for k in scope.split("·") if k.strip()] + [CATS.get(w.get("category"), "")],
-        "dateCreated": w.get("date"), "image": work_images(w),
+        "image": work_images(w),
         "creator": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}, "isPartOf": {"@id": SITE_ID},
         "sponsor": {"@type": "Organization", "name": cname},
     }
@@ -439,8 +438,6 @@ def llms(works):
             bits.append(f"지역: {w['location']}")
         if w.get("type"):
             bits.append(f"범위: {w['type']}")
-        if w.get("date"):
-            bits.append(f"연도: {w['date'][:4]}")
         lines.append(f"- [{w['title']}]({SITE}/work/{w['slug']}/): " + ". ".join(b for b in bits if b))
     return "\n".join(lines) + "\n"
 

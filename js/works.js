@@ -91,7 +91,6 @@
         '<div><dt class="mono">Client</dt><dd>'+esc(w.client||'—')+'</dd></div>'+
         '<div><dt class="mono">Category</dt><dd>'+esc(CATS[w.category]||'—')+'</dd></div>'+
         '<div><dt class="mono">Scope</dt><dd>'+esc(w.type||'—')+'</dd></div>'+
-        '<div><dt class="mono">Year</dt><dd>'+esc((w.date||'').slice(0,4)||'—')+'</dd></div>'+
       '</dl>'+
       (w.blocks?'<p class="wd__lead">'+esc(w.summary||'')+'</p>'+blocks(w.blocks,w.body)+(w.note?'<p class="wd__note mono">'+esc(w.note)+'</p>':''):
       '<div class="wd__cover">'+img(w.cover,w.title,'ph--o')+'</div>'+

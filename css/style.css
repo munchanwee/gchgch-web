@@ -267,7 +267,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .wd__back{display:inline-flex;gap:8px;color:var(--ink-2);margin-bottom:48px}
 .wd__back:hover{color:var(--orange)}
 .wd__title{overflow-wrap:anywhere;font-size:clamp(44px,7vw,112px);font-weight:700;letter-spacing:-.045em;line-height:.95}
-.wd__meta{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;border-top:2px solid var(--black);margin-top:48px;padding-top:20px}
+.wd__meta{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;border-top:2px solid var(--black);margin-top:48px;padding-top:20px}
 .wd__meta dt{color:var(--ink-2)}
 .wd__meta dd{font-weight:700;font-size:17px;margin-top:6px}
 .wd__cover{margin-top:56px;aspect-ratio:16/9;position:relative;background:var(--black);border-radius:4px;overflow:hidden}
