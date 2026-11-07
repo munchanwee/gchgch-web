@@ -6,7 +6,8 @@ data/works.json 을 원본으로 _site/ 에 배포용 사이트를 만든다.
 - index.html             : 작업 카드 목록을 미리 넣는다 (자바스크립트가 같은 모양으로 다시 그린다)
 - index.html, about.html : 구조화 데이터(JSON-LD)를 넣는다
 - work.html              : 옛 주소(work.html?id=slug)를 새 주소로 보낸다
-- sitemap.xml, robots.txt, llms.txt
+- sitemap.xml(페이지마다 git 기록으로 수정일 lastmod 자동 계산), robots.txt, llms.txt
+- 404.html : 없는 주소일 때 보여 줄 한글 안내 페이지 (작업 목록 링크 포함)
 
 GitHub Actions(.github/workflows/pages.yml)가 main 에 푸시될 때마다 실행한다.
 로컬 확인: python tools/build.py  →  python -m http.server -d _site 8127
@@ -17,7 +18,9 @@ import html
 import json
 import os
 import shutil
+import subprocess
 import sys
+from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "_site")
@@ -37,6 +40,8 @@ COMPANY = {
     "locality": "동구",
     "street": "동계천로 84 1층",
     "email": "gchgchstudio@gmail.com",
+    "phone": "010-9625-4310",
+    "phone_intl": "+82-10-9625-4310",
     "instagram": "https://www.instagram.com/gchgchstudio/",
     "disabled_no": "제0014-2026-03868호",
     "disabled_from": "2026-10-27",
@@ -95,6 +100,7 @@ def org_ld():
         "image": absu("assets/og.png"),
         "description": DESCRIPTION,
         "email": COMPANY["email"],
+        "telephone": COMPANY["phone_intl"],
         "taxID": COMPANY["brn"],
         "founder": {"@type": "Person", "name": COMPANY["ceo"], "jobTitle": "대표"},
         "address": {"@type": "PostalAddress", "streetAddress": COMPANY["street"],
@@ -374,6 +380,41 @@ def work_page(w, nxt):
     return head + TAIL
 
 
+def not_found_page(works):
+    links = "".join(f'<li><a href="/work/{esc(w["slug"])}/">{esc(w["title"])}</a></li>' for w in works)
+    return f"""<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>페이지를 찾을 수 없습니다 — 그치그치 GCHGCH STUDIO</title>
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/assets/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+{HEADER}
+
+<main>
+<article class="wrap wd" id="wd" data-static="1">
+<a href="/" class="wd__back mono">← Works</a>
+<h1 class="wd__title">404</h1>
+<div class="wd__text">
+<h2>찾는 페이지가 없습니다.</h2>
+<p>주소가 바뀌었거나 없어진 페이지입니다. 작업 목록이나 회사 소개에서 다시 찾아 주세요.</p>
+<p><a href="/">작업 목록 보기 →</a><br><a href="/about.html">회사 소개 보기 →</a></p>
+<h2>작업</h2>
+<ul>{links}</ul>
+</div>
+</article>
+"""  + TAIL
+
+
 def redirect_page(works):
     links = "".join(f'<li><a href="/work/{esc(w["slug"])}/">{esc(w["title"])}</a></li>' for w in works)
     slugs = json.dumps([w["slug"] for w in works])
@@ -394,9 +435,69 @@ def redirect_page(works):
 """
 
 
+def git(*args):
+    try:
+        r = subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True, encoding="utf-8")
+    except OSError:
+        return ""
+    return r.stdout if r.returncode == 0 else ""
+
+
+def now_iso():
+    return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+
+
+def file_lastmod(*paths):
+    """파일들이 마지막으로 커밋된 시각. 커밋 안 된 수정이 있으면 지금 시각."""
+    if git("status", "--porcelain", "--", *paths).strip():
+        return now_iso()
+    return git("log", "-1", "--format=%cI", "--", *paths).strip() or None
+
+
+def work_lastmods(works):
+    """작업마다 works.json 안의 자기 내용이 마지막으로 바뀐 커밋 시각을 찾는다.
+    한 작업만 고쳐도 다른 작업의 수정일은 그대로 남는다."""
+    def key(w):
+        return json.dumps(w, ensure_ascii=False, sort_keys=True)
+
+    def by_slug(text):
+        try:
+            data = json.loads(text)
+        except ValueError:
+            return {}
+        return {w.get("slug"): key(w) for w in (data if isinstance(data, list) else data.get("works", []))}
+
+    cur = {w["slug"]: key(w) for w in works}
+    out = {}
+    log = [l.split(" ", 1) for l in git("log", "--format=%H %cI", "--", "data/works.json").splitlines() if " " in l]
+    if not log:
+        return out
+    pending = set(cur)
+    head = by_slug(git("show", "HEAD:data/works.json"))
+    for slug in list(pending):
+        if head.get(slug) != cur[slug]:  # 아직 커밋 안 된 수정
+            out[slug] = now_iso()
+            pending.discard(slug)
+    for sha, date in log:
+        if not pending:
+            break
+        snap = by_slug(git("show", f"{sha}:data/works.json"))
+        for slug in list(pending):
+            if snap.get(slug) == cur[slug]:
+                out[slug] = date  # 더 오래된 커밋에서도 같으면 다음 차례에 덮어쓴다
+            else:
+                pending.discard(slug)
+    return out
+
+
 def sitemap(works):
-    urls = [SITE + "/", SITE + "/about.html"] + [f"{SITE}/work/{w['slug']}/" for w in works]
-    body = "".join(f"  <url><loc>{u}</loc></url>\n" for u in urls)
+    mods = work_lastmods(works)
+    work_dates = [d for d in mods.values() if d]
+    home = max([d for d in [file_lastmod("index.html")] + work_dates if d], default=None,
+               key=lambda d: datetime.fromisoformat(d))
+    pages = [(SITE + "/", home), (SITE + "/about.html", file_lastmod("about.html"))] + \
+            [(f"{SITE}/work/{w['slug']}/", mods.get(w["slug"])) for w in works]
+    body = "".join(f"  <url><loc>{u}</loc>" + (f"<lastmod>{d}</lastmod>" if d else "") + "</url>\n" for u, d in pages)
     return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + body + "</urlset>\n"
 
 
@@ -421,7 +522,7 @@ def llms(works):
         f"- 장애인기업: 중소벤처기업부 장애인기업 확인 {COMPANY['disabled_no']} "
         f"(유효기간 {COMPANY['disabled_from']} ~ {COMPANY['disabled_to']}, 근거 {COMPANY['disabled_law']}, "
         f"진위 확인 공공구매 종합정보망 {COMPANY['disabled_check']})",
-        f"- 문의: {COMPANY['email']}",
+        f"- 문의: {COMPANY['email']}, {COMPANY['phone']}",
         f"- 웹사이트: {SITE}/",
         f"- 회사 소개: {SITE}/about.html",
         "",
@@ -486,7 +587,8 @@ def main():
            jsonld({"@context": "https://schema.org", "@graph": [org_ld(), website_ld(), about]}))
 
     for name, text in [("work.html", redirect_page(works)), ("sitemap.xml", sitemap(works)),
-                       ("robots.txt", robots()), ("llms.txt", llms(works)), (".nojekyll", "")]:
+                       ("robots.txt", robots()), ("llms.txt", llms(works)), ("404.html", not_found_page(works)),
+                       (".nojekyll", "")]:
         with open(os.path.join(OUT, name), "w", encoding="utf-8", newline="\n") as f:
             f.write(text)
     print(f"_site 생성: 작업 {len(works)}개" + (" (초안 포함)" if draft else ""))

@@ -20,6 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 사이트맵 수정일(lastmod)을 git 기록으로 계산한다
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
