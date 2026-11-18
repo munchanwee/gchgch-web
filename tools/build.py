@@ -39,7 +39,7 @@ COMPANY = {
     "region": "전남광주통합특별시",
     "locality": "동구",
     "street": "동계천로 84 1층",
-    "email": "gchgchstudio@gmail.com",
+    "email": "gchgchstudio@naver.com",
     "phone": "010-9625-4310",
     "phone_intl": "+82-10-9625-4310",
     "instagram": "https://www.instagram.com/gchgchstudio/",
@@ -291,7 +291,7 @@ TAIL = """<section class="contact" style="padding-top:clamp(72px,8vw,120px)">
     <h2 class="contact__q">같이 물어봐요.</h2>
     <div class="contact__row" style="margin-top:32px">
       <p class="contact__p">답을 정해 오지 않아도 괜찮습니다.</p>
-      <div class="contact__links"><a href="mailto:gchgchstudio@gmail.com">gchgchstudio@gmail.com <span>↗</span></a><a href="https://www.instagram.com/gchgchstudio/" target="_blank" rel="noopener">@gchgchstudio <span>↗</span></a></div>
+      <div class="contact__links"><a href="mailto:gchgchstudio@naver.com">gchgchstudio@naver.com <span>↗</span></a><a href="https://www.instagram.com/gchgchstudio/" target="_blank" rel="noopener">@gchgchstudio <span>↗</span></a></div>
     </div>
   </div>
 </section>
@@ -300,7 +300,7 @@ TAIL = """<section class="contact" style="padding-top:clamp(72px,8vw,120px)">
 <footer class="ftm">
   <div class="wrap ftm__in">
     <span>© 2026 gchgch</span>
-    <span class="ftm__links"><a href="mailto:gchgchstudio@gmail.com">gchgchstudio@gmail.com</a><a href="https://www.instagram.com/gchgchstudio/" target="_blank" rel="noopener">Instagram</a></span>
+    <span class="ftm__links"><a href="mailto:gchgchstudio@naver.com">gchgchstudio@naver.com</a><a href="https://www.instagram.com/gchgchstudio/" target="_blank" rel="noopener">Instagram</a></span>
   </div>
 </footer>
 
